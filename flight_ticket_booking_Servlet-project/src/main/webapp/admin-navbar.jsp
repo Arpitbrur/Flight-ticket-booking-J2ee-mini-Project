@@ -25,10 +25,10 @@
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav">
 					<li class="nav-item"><a class="nav-link active"
-						aria-current="page" href="admin-flight-detail.jsp">Admin-Home</a></li>
-					<li class="nav-item"><a class="nav-link" href="admin-login.jsp">flightDetail</a>
+						aria-current="page" href="home.jsp">Admin-Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="admin-flight-detail.jsp">flightDetail</a>
 					</li>
-					<li class="nav-item"><a class="nav-link" href="user-login.jsp">Logout</a>
+					<li class="nav-item"><a class="nav-link" href="adminLogout">Logout</a>
 					</li>
 				</ul>
 			</div>
