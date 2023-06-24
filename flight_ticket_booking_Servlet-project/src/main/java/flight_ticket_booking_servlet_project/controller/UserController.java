@@ -39,6 +39,7 @@ public class UserController extends HttpServlet {
 		}else {
 			req.setAttribute("msg", "mismatch-password");
 			RequestDispatcher dispatcher = req.getRequestDispatcher("user-registration.jsp");
+			dispatcher.forward(req, resp);
 		}
 	}
 }

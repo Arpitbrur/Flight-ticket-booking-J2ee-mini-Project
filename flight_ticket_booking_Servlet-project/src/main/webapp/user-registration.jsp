@@ -19,13 +19,13 @@
 	<div class="myLogin">
 		<form action="userRegister" method="post">
 		<label>Name</label>
-		<input type="text" name="name"><br><br>
+		<input type="text" name="userName"><br><br>
 		<label>Email</label>
-		<input type="email" name="email"><br><br>
+		<input type="email" name="userEmail"><br><br>
 		<label>Password</label>
-		<input type="password" name="password"><br><br>
+		<input type="password" name="userPassword"><br><br>
 		<label>Confirm-Password</label>
-		<input type="password" name="confirmpassword"><br><br>
+		<input type="password" name="confirmPassword"><br><br>
 		<input type="Submit" value="register">
 	</form>
 	</div>

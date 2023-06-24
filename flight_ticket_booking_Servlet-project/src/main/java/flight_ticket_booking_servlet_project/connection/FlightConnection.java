@@ -11,7 +11,7 @@ public class FlightConnection {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			
-			String url = "jdbc:mysql://localhost:3306/flight_ticket_booking_Servlet-project";
+			String url = "jdbc:mysql://localhost:3306/flight_ticket_booking_servlet-project";
 			String user = "root";
 			String pass = "Arpit@123";
 			

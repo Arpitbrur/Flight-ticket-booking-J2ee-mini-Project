@@ -15,9 +15,9 @@
 	<div class="myLogin">
         <form action="userLogin" method="post">
             <label id="myEmail">Email</label>
-            <input type="email" name="email"><br><br>
+            <input type="email" name="userEmail"><br><br>
             <label id="myPassword">Password</label>
-            <input type="password" name="password"><br><br>
+            <input type="password" name="userPassword"><br><br>
         <p>if not signUp please....<a href="user-registration.jsp">SignUp</a></p>
             <input type="submit" value="Login">
         </form>

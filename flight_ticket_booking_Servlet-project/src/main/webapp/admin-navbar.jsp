@@ -25,7 +25,7 @@
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav">
 					<li class="nav-item"><a class="nav-link active"
-						aria-current="page" href="home.jsp">Admin-Home</a></li>
+						aria-current="page" href="Home.jsp">Admin-Home</a></li>
 					<li class="nav-item"><a class="nav-link" href="admin-flight-detail.jsp">flightDetail</a>
 					</li>
 					<li class="nav-item"><a class="nav-link" href="adminLogout">Logout</a>

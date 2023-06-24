@@ -23,8 +23,8 @@ padding: 0px;
 
 form{
  border: 2px solid red;
- padding: 20px;
- width:400px;
+ padding: 15px;
+ width:600px;
 }
 input[name]{
 	float: right;
@@ -42,37 +42,41 @@ padding: 5px 5px ;
 <jsp:include page="admin-navbar.jsp"></jsp:include>
 
 	<div class="flight">
-	<form action="admin-add-flight">
+	<form action="admin-add-flight" method="post"> 
 	<label id="">Flight Number</label>
-	<input type="number" name="flight-number" class="common"><br><br>
+	<input type="number" placeholder="Enter flight Number" name="flightNumber" class="common"><br><br>
+	
+	<label id="">Flight Name</label>
+	<input type="text" placeholder="Enter flight Name" name="flightName" class="common"><br><br>
 	
 	<label id="source">Source</label>
-	<input type="text" name="source" class="common"><br><br>
+	<input type="text" placeholder="Enter your Source" name="source" class="common"><br><br>
 	
 	<label id="destination">Destination</label>
-	<input type="text" name="destination" class="common"><br><br>
+	<input type="text" placeholder="Enter your destination" name="destination" class="common"><br><br>
 	
 	<label id="departure-time">Departure-time</label>
-	<input type="time" name="departure-time" class="common"><br><br>
+	<input type="time" placeholder="Enter departure time" name="departure-time" class="common"><br><br>
 	
 	<label id="arrival-time">arrival-time</label>
-	<input type="time" name="arrival-time" class="common"><br><br>
+	<input type="time" placeholder="Enter arrival time" name="arrival-time" class="common"><br><br>
 	
-	<label id="journey-date">journey-date</label>
-	<input type="date" name="journey-date" class="common"><br><br>
+	<label id="price">Flight-Economy-ticket-price</label>
+	<input type="number" placeholder="Enter flight economy ticket price " name="ticketEconomyPrice" class="common"><br><br>
 	
-	<label id="price">price</label>
-	<input type="number" name="price" class="common"><br><br>
 	
-	<label id="flight-type">Flight-type </label>
+	<label id="price">Flight-business-ticket-price</label>
+	<input type="number" placeholder="Enter flight business ticket price " name="ticketBusinessPrice" class="common"><br><br>
+	
+	<!-- <label id="flight-type">Flight-type </label> -->
 
 	
-	<select class="ticketType" class="common">
+	<!-- <select name="ticketType" class="common">
 		<option>Select your class</option>
 		<option value="economy" class=" common">Economy</option>
 		<option value="Business" class="common">Business</option>
 	
-	</select><br><br>
+	</select><br><br> -->
 	
 	<input type="submit">
 	
