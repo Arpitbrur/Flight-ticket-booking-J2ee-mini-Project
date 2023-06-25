@@ -12,7 +12,7 @@
         <ul>
             <li>Flight-Ticket-Booking</li>
             <a href=""><li>Admin Home</li></a>
-            <a href="admin"><li>Flight Details</li></a>
+            <a href="admin-flight-detail.jsp"><li>Flight Details</li></a>
             <a href="adminlogout"><li>Logout</li></a>
         </ul>
     </nav>

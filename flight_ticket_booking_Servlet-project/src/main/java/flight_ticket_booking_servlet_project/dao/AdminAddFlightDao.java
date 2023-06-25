@@ -55,13 +55,14 @@ public class AdminAddFlightDao {
 			while(resultSet.next()) {
 				AdminAddFlight addFlight = new AdminAddFlight();
 				
-				addFlight.setFlightNumber(resultSet.getInt(""));
-				addFlight.setFlightSource(resultSet.getString(""));
-				addFlight.setFlightDestination(resultSet.getString(""));
-				addFlight.setFlightArrivalTime(resultSet.getTime(""));
-				addFlight.setFlightDepartureTime(resultSet.getTime(""));
-				addFlight.setFlightEconomyPrice(resultSet.getDouble(""));
-				addFlight.setFlightBusinessPrice(resultSet.getDouble(""));
+				addFlight.setFlightNumber(resultSet.getInt("flightNumber"));
+				addFlight.setFlightName(resultSet.getString("flightName"));
+				addFlight.setFlightSource(resultSet.getString("flightSource"));
+				addFlight.setFlightDestination(resultSet.getString("flightDestination"));
+				addFlight.setFlightDepartureTime(resultSet.getTime("flightDepartureTime"));
+				addFlight.setFlightArrivalTime(resultSet.getTime("flightArrivalTime"));
+				addFlight.setFlightEconomyPrice(resultSet.getDouble("flightEconomyPrice"));
+				addFlight.setFlightBusinessPrice(resultSet.getDouble("flightBusinessPrice"));
 			
 				addFlights.add(addFlight);
 			}

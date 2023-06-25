@@ -13,13 +13,12 @@
 <body>
 	<%
 		AdminAddFlightDao addFlightDao = new AdminAddFlightDao();
-	
 		List<AdminAddFlight> addFlights = addFlightDao.getAllFlight();
 	%>
 	<div>
-		<table>
+		<table border="2px">
 			<tr>
-				<th>Flight Image</th>
+				<th>Logo</th>
 				<th>Flight Number</th>
 				<th>Flight Name</th>
 				<th>Source</th>
@@ -29,23 +28,23 @@
 				<th>EconomyPrice</th>
 				<th>BusinessPrice</th>
 				<th>Delete</th>
-				<th>Edit</th>
+				<th>Update</th>
 			</tr>
-			<%for(AdminAddFlight addFlight: addFlights){%>
-			<% if(addFlight.getFlightName().equals("indigo")){%>
-			<tr>
-				<td><img alt ="indigo" src=""></td>
-				<td><%=addFlight.getFlightNumber() %></td>
-				<td><%=addFlight.getFlightName() %></td>
-				<td><%=addFlight.getFlightSource() %></td>
-				<td><%=addFlight.getFlightDestination() %></td>
-				<td><%=addFlight.getFlightDepartureTime() %></td>
-				<td><%=addFlight.getFlightArrivalTime() %></td>
-				<td><%=addFlight.getFlightEconomyPrice() %></td>
-				<td><%=addFlight.getFlightBusinessPrice() %></td>
-				<td><a href="deleteFlight?flightNumber=<%=addFlight.getFlightNumber() %>"><button>DELETE</button></a></td>
-				<td><a href="updateFlight.jsp?flightNumber=<%=addFlight.getFlightNumber() %>"><button>Update</button></a></td>
 			
+			<%for(AdminAddFlight addFlight : addFlights) {%>
+				<%if(addFlight.getFlightName().equalsIgnoreCase("indigo")){ %>
+			<tr>
+				<td><img alt ="indigo" src="https://1000logos.net/wp-content/uploads/2021/07/IndiGo-Logo.png" width="100px" height="80px"></td>
+				<td><%=addFlight.getFlightNumber()%></td>
+				<td><%=addFlight.getFlightName()%></td>
+				<td><%=addFlight.getFlightSource()%></td>
+				<td><%=addFlight.getFlightDestination()%></td>
+				<td><%=addFlight.getFlightDepartureTime()%></td>
+				<td><%=addFlight.getFlightArrivalTime()%></td>
+				<td><%=addFlight.getFlightEconomyPrice()%></td>
+				<td><%=addFlight.getFlightBusinessPrice()%></td>
+				<td><a href="deleteFlight?flightNumber=<%=addFlight.getFlightNumber()%>"><button>DELETE</button></a></td>
+				<td><a href="update-Flight.jsp?flightNumber=<%=addFlight.getFlightNumber()%>"><button>Update</button></a></td>
 			</tr>
 			<%} %>
 			<%} %>
