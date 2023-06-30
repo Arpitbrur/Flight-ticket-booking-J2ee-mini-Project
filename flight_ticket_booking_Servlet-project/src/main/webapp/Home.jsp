@@ -151,10 +151,11 @@
         <div class="air-logo"></div>
         <nav class="navbar">
             <ul>
+                <li><a href="admin-insert.jsp">Admin-Insert</a></li>
+                <li><a href="admin-delete.jsp">Admin-Delete</a></li>
                 <li><a href="admin-login.jsp">Admin Login</a></li>
                 <li><a href="user-login.jsp">user Login</a></li>
-                <li><a href="">Service</a></li>
-                <li><a href="">Contact with us</a></li>
+                
             </ul>
         </nav>       
     </header>

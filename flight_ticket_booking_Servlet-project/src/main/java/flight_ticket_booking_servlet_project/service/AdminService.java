@@ -9,6 +9,16 @@ public class AdminService {
 
 	AdminDao adminDao = new AdminDao();
 	
+	// Insert Admin------------------------------------------------------------------------
+	public Admin insertAdmin(Admin admin) {
+		return adminDao.insertAdmin(admin);
+	}
+	
+	// delete Admin----------------------------------------------------------------
+	public void deleteAdmin(int adminId) {
+		adminDao.deleteAdmin(adminId);
+	}	
+		
 	// Display method--------------------------------------------------------------
 	public List<Admin> getAllAdmin(){
 		return adminDao.getAllAdmin();

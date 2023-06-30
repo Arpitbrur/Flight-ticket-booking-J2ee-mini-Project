@@ -24,4 +24,9 @@ public class UserService {
 	public User getUserByEmail(String email) {
 		return dao.getUserByEmail(email);
 	}
+	
+	// delete user----------------------------------------------------------------------------------
+	public void deleteUser(int userId) {
+		dao.deleteUser(userId);
+	}	
 }

@@ -75,4 +75,25 @@ public class UserDao {
 	}
 	return null;
 	}
+	
+	// delete user----------------------------------------------------------------------------------
+	public void deleteUser(int userId) {
+		
+		connection = FlightConnection.getFlightConnection();
+		
+		String delete ="delete from user where userId=?";
+		
+		try {
+			PreparedStatement preparedStatement = connection.prepareStatement(delete);
+			preparedStatement.setInt(1, userId);
+			
+			preparedStatement.execute();
+			
+			System.out.println("Data deleted Successfully......");
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
 }

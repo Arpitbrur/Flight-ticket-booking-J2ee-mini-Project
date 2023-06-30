@@ -15,9 +15,67 @@ public class AdminDao {
 
 	Connection connection = FlightConnection.getFlightConnection();
 	
+	// Insert Admin------------------------------------------------------------------------
+	public Admin insertAdmin(Admin admin) {
+			
+		String insert = "insert into admin (adminId, adminEmail, adminPassword) values(?,?,?)";
+			
+		try {
+			PreparedStatement preparedStatement = connection.prepareStatement(insert);
+				
+			preparedStatement.setInt(1, admin.getAdminId());
+			preparedStatement.setString(2, admin.getAdminEmail());
+			preparedStatement.setString(3, admin.getAdminPassword());
+				
+			preparedStatement.execute();
+				
+			return admin;
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return null;
+			
+	}
+	
+	// delete Admin----------------------------------------------------------------
+	public void deleteAdmin(int adminId) {
+		
+		String delete = "delete from admin where adminId=?";
+		
+		try {
+			PreparedStatement preparedStatement = connection.prepareStatement(delete);
+			
+			preparedStatement.setInt(1, adminId);
+			
+			preparedStatement.executeUpdate();
+			
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	// Display method--------------------------------------------------------------
 	public List<Admin> getAllAdmin(){
-		String display = "SELECT * from adminlogin";
+		String display = "SELECT * from admin";
 	try {
 		PreparedStatement preparedStatement = connection.prepareStatement(display);
 		
@@ -39,6 +97,7 @@ public class AdminDao {
 	}
 	return null;
 	}
+	
 	
 	// getBy Email-----------------------------------------------------------------------
 	public Admin getAdminByEmail(String email) {
