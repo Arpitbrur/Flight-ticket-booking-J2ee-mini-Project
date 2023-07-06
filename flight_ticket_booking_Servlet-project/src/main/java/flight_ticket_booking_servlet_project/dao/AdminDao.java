@@ -56,22 +56,6 @@ public class AdminDao {
 			e.printStackTrace();
 		}
 	}
-		
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	// Display method--------------------------------------------------------------
 	public List<Admin> getAllAdmin(){

@@ -11,64 +11,16 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'poppins',sans-serif;
+    font-family: 'cursive',sans-serif;
 }
 
-header {
-            background-image: linear-gradient( #7878e4, #d4d474, #91ca91, rgb(197, 163, 99));
-            /* background-color: #14bbb8b3, blue; */
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-        }
-
-        .navbar {
-            /* background-color: aqua; */
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            position: sticky;
-            margin-top: 0px;
-            position: sticky;
-
-        }
-
-        .navbar ul {
-            display: flex;
-            list-style: none;
-
-        }
-
-
-        .navbar ul li {
-            padding: 15px;
-
-        }
-
-        .navbar ul li a {
-            font-size: 22px;
-            text-decoration: none;
-            color: black;
-            padding: 10px;
-        }
-
-        .navbar ul li a:hover {
-            color: white;
-            background-color: #8118218e;
-            padding: 10px;
-            border-radius: 20px;
-            transition: all;
-            transition-property: all;
-            transition-duration: 0.8s;
-            
-        }
 
 
 section{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 91vh;
+    min-height: 100vh;
     width: 100%;
     
     background: url("https://c1.wallpaperflare.com/preview/549/709/134/aircraft-airplane-clouds-dawn.jpg")no-repeat;
@@ -85,8 +37,8 @@ section{
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: center;
-    /* align-items: center; */
-    margin-left: -10em;
+    align-items: center; 
+   
 
 }
 h2{
@@ -167,19 +119,7 @@ input{
 </head>
 <body>
 
-<header>
-        <div class="air-logo"></div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="Home.jsp">Admin Home</a></li>
-                <li><a href="admin-delete.jsp">Delete Admin</a></li>
-                <li><a href="">Service</a></li>
-                <li><a href="">Contact with us</a></li>
 
-            </ul>
-        </nav>
-        
-    </header>
     <section>
         <div class="form-box">
             <div class="form-value">

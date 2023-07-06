@@ -75,4 +75,63 @@ public class AdminAddFlightDao {
 		return null;
 		
 	}
+	
+	// delete flight--------------------------------------------------------------------------
+	public int deleteFlight(int flightNumber) {
+		String query = "Delete from flightdetails where flightNumber=?";
+		try {
+			PreparedStatement preparedStatement = connection.prepareStatement(query);
+			preparedStatement.setInt(1, flightNumber);
+			return preparedStatement.executeUpdate();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return 0;
+	}
+	
+	// update flight------------------------------------------------------------------------------
+	public int updateFlight(AdminAddFlight addFlight) {
+		String query = "Update flightdetails set flightNumber=?, flightSource=?, flightDestination=?, flightDepartureTime=?, flightArrivalTime=?, flightEconomyPrice=?, flightBusinessPrice=?";
+		try {
+			PreparedStatement preparedStatement = connection.prepareStatement(query);
+			preparedStatement.setString(1, addFlight.getFlightName());
+			preparedStatement.setString(2, addFlight.getFlightSource());
+			preparedStatement.setString(3, addFlight.getFlightDestination());
+			preparedStatement.setTime(4, addFlight.getFlightDepartureTime());
+			preparedStatement.setTime(5, addFlight.getFlightArrivalTime());
+			preparedStatement.setDouble(6, addFlight.getFlightEconomyPrice());
+			preparedStatement.setDouble(7, addFlight.getFlightBusinessPrice());
+			
+			return preparedStatement.executeUpdate();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		finally {
+			try {
+				connection.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		return 0;
+	} 
+	
+	
+	//get flightBy SourceToDestination------------------------------------------------------------
+	public List<AdminAddFlight> getFlightBySourceToDestination(String Source, String Destination){
+		
+		List<AdminAddFlight> addFlights = getAllFlight();
+		List<AdminAddFlight> filterFlightDetails = new ArrayList<AdminAddFlight>();
+		
+		for(AdminAddFlight adminaAddFlight: addFlights) {
+			if((adminaAddFlight.getFlightSource().equalsIgnoreCase(Source)) && adminaAddFlight.getFlightDestination().equalsIgnoreCase(Destination)) {
+				
+				filterFlightDetails.add(adminaAddFlight);
+			}
+		}
+		return filterFlightDetails;
+	}
 }

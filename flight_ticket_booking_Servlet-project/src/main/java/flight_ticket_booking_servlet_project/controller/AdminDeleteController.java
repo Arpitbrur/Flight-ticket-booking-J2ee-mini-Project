@@ -2,6 +2,7 @@ package flight_ticket_booking_servlet_project.controller;
 
 import java.io.IOException;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -17,12 +18,14 @@ public class AdminDeleteController extends HttpServlet{
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		
-		Admin admin = new Admin();
-		
+		Admin admin = new Admin();	
 		AdminService adminService = new AdminService();
 		
 		int id = Integer.parseInt(req.getParameter("adminId"));
 		
 		adminService.deleteAdmin(id);
+		
+		RequestDispatcher dispatcher = req.getRequestDispatcher("Home.jsp");
+		dispatcher.include(req, resp);
 	}
 }

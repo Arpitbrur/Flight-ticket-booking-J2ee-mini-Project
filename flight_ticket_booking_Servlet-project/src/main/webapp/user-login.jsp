@@ -99,7 +99,7 @@ button{
 }
 .register p a{
     text-decoration: none;
-    color: #fff;
+    color: red;
     font-weight: 600;
 }
 .register p a:hover{

@@ -11,4 +11,14 @@ public class AdminAddFlightService {
 	public AdminAddFlight saveAdminFlight(AdminAddFlight addFlight) {
 		return addFlightDao.saveAdminFlight(addFlight);
 	}
+	
+	// delete flight--------------------------------------------------------------------------
+	public int deleteFlight(int flightNumber) {
+		return addFlightDao.deleteFlight(flightNumber);
+	}	
+	
+	// update flight------------------------------------------------------------------------------
+	public int updateFlight(AdminAddFlight addFlight) {
+		return addFlightDao.updateFlight(addFlight);
+	}	
 }

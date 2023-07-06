@@ -6,18 +6,6 @@
 <meta charset="UTF-8">
 <title>Flight-ticket-booking</title>
 <style>
-/* img {
-	height: 100vh;
-
-}
-
-.navigation {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	align-content: center;
-}
- */
  
  * {
             box-sizing: border-box;
@@ -154,7 +142,7 @@
                 <li><a href="admin-insert.jsp">Admin-Insert</a></li>
                 <li><a href="admin-delete.jsp">Admin-Delete</a></li>
                 <li><a href="admin-login.jsp">Admin Login</a></li>
-                <li><a href="user-login.jsp">user Login</a></li>
+                <li><a href="user-login.jsp">User Login</a></li>
                 
             </ul>
         </nav>       

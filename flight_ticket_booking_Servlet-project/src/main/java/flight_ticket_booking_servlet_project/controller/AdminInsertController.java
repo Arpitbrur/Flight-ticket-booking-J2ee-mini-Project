@@ -2,6 +2,7 @@ package flight_ticket_booking_servlet_project.controller;
 
 import java.io.IOException;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -28,12 +29,10 @@ public class AdminInsertController extends HttpServlet {
 		admin.setAdminEmail(email);
 		admin.setAdminPassword(pass);
 		
-		AdminService adminService = new AdminService();
-		
-//		System.out.println(id);
-//		System.out.println(email);
-//		System.out.println(pass);
-//		
+		AdminService adminService = new AdminService();	
 		adminService.insertAdmin(admin);
+		
+		RequestDispatcher dispatcher = req.getRequestDispatcher("Home.jsp");
+		dispatcher.forward(req, resp);
 	}
 }
