@@ -19,7 +19,6 @@
 
         header {
             background-image: linear-gradient( #7878e4, #d4d474, #91ca91, rgb(197, 163, 99));
-            /* background-color: #14bbb8b3, blue; */
             display: flex;
             align-items: center;
             justify-content: space-around;
@@ -70,10 +69,9 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 91vh;
-    width: 100%;
-    
-    background: url("https://c4.wallpaperflare.com/wallpaper/146/180/932/flight-simulator-planes-cessna-citation-cj4-ultrawide-hd-wallpaper-preview.jpg")no-repeat;
+    min-height: 92vh;
+    width: 100%;  
+    background: url("https://wallpaperaccess.com/full/6830809.jpg")no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -87,7 +85,8 @@ section{
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: center;
-    align-items: center; 
+    /* align-items: center; */
+    margin-left: -50vh; 
    
 
 }
@@ -99,7 +98,7 @@ h2{
 .inputbox{
     position: relative;
     margin: 30px 0;
-    width: 310px;
+    width: 250px;
     border-bottom: 2px solid #fff;
 }
 .inputbox label{
@@ -117,8 +116,8 @@ input:valid ~ label{
 top: -5px;
 }
 .inputbox input {
-    width: 100%;
-    height: 50px;
+    width: 80%;
+    height: 65px;
     background: transparent;
     border: none;
     outline: none;
@@ -126,13 +125,13 @@ top: -5px;
     padding:0 35px 0 5px;
     color: #fff;
 }
-.inputbox ion-icon{
+/* .inputbox ion-icon{
     position: absolute;
     right: 8px;
     color: #fff;
     font-size: 1.2em;
     top: 20px;
-}
+} */
 .forget{
     margin: -15px 0 15px ;
     font-size: .9em;
@@ -182,7 +181,7 @@ input{
         <div class="air-logo"></div>
         <nav class="navbar">
             <ul>
-                <li><a href="Home.jsp">User- Home</a></li>
+                <li><a href="Home.jsp">Home</a></li>
                 <li><a href="">MyTicket</a></li>
                 
             </ul>
@@ -192,20 +191,20 @@ input{
      <section>
         <div class="form-box">
             <div class="form-value">
-                <form action="" method="">
+                <form action="searchUser" method="get">
                     <h2>User-Home</h2>
                     <div class="inputbox">
-                        <ion-icon name=""></ion-icon>
+                        
                         <input type="text" name="source" required>
                         <label for="">Source</label>
                     </div>
                     <div class="inputbox">
-                        <ion-icon name=""></ion-icon>
+                       
                         <input type="text" name="destination" required>
                         <label for="">Destination</label>
                     </div>
                     <div class="inputbox">
-                        <ion-icon name=""></ion-icon>
+                     
                         <input type="date" name="date" value="<%=LocalDate.now().plusDays(1)%>" required>
                         <label for="">Date</label>
                     </div>

@@ -1,4 +1,3 @@
-<%@page import="javax.swing.text.StyledEditorKit.ForegroundAction"%>
 <%@page import="flight_ticket_booking_servlet_project.dto.AdminAddFlight"%>
 <%@page import="java.util.List"%>
 <%@page import="flight_ticket_booking_servlet_project.dao.AdminAddFlightDao"%>
@@ -8,10 +7,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>User search flight</title>
 </head>
 <body>
-
+	
 	<%
 		AdminAddFlightDao addFlightDao = new AdminAddFlightDao();
 		List<AdminAddFlight> addFlights = addFlightDao.getAllFlight();
@@ -19,7 +18,7 @@
 	<div>
 		<table border="2px">
 			<tr>
-				<th>Logo</th>
+				<th>LoGo</th>
 				<th>Flight Number</th>
 				<th>Flight Name</th>
 				<th>Source</th>
@@ -28,8 +27,7 @@
 				<th>arrival-Time</th>
 				<th>EconomyPrice</th>
 				<th>BusinessPrice</th>
-				<th>Delete</th>
-				<th>Update</th>
+				<th>BookFlight</th>
 			</tr>
 			
 			<%for(AdminAddFlight addFlight : addFlights) {%>
@@ -44,29 +42,12 @@
 				<td><%=addFlight.getFlightArrivalTime()%></td>
 				<td><%=addFlight.getFlightEconomyPrice()%></td>
 				<td><%=addFlight.getFlightBusinessPrice()%></td>
-				<td><a href="deleteFlight?flightNumber=<%=addFlight.getFlightNumber()%>"><button>DELETE</button></a></td>
-				<td><a href="admin-edit-flight.jsp?flightNumber=<%=addFlight.getFlightNumber()%>"><button>Update</button></a></td>
+				<td><a href="user-book-flight.jsp?flightNumber=<%=addFlight.getFlightNumber()%>"><button>Book</button></a></td>
 			</tr>
 			<%} %>
-			
-			<%if(addFlight.getFlightName().equalsIgnoreCase("GoAir")){ %>
-			<tr>
-				<td><img alt ="GoAir" src="" width="100px" height="80px"></td>
-				<td><%=addFlight.getFlightNumber()%></td>
-				<td><%=addFlight.getFlightName()%></td>
-				<td><%=addFlight.getFlightSource()%></td>
-				<td><%=addFlight.getFlightDestination()%></td>
-				<td><%=addFlight.getFlightDepartureTime()%></td>
-				<td><%=addFlight.getFlightArrivalTime()%></td>
-				<td><%=addFlight.getFlightEconomyPrice()%></td>
-				<td><%=addFlight.getFlightBusinessPrice()%></td>
-				<td><a href="deleteFlight?flightNumber=<%=addFlight.getFlightNumber()%>"><button>DELETE</button></a></td>
-				<td><a href="admin-edit-flight.jsp?flightNumber=<%=addFlight.getFlightNumber()%>"><button>Update</button></a></td>
-			</tr>
-			<%} %>
-			
 			<%} %>
 		</table>
 	</div>
+	
 </body>
 </html>

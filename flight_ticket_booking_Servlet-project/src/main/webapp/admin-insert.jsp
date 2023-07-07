@@ -115,6 +115,22 @@ input{
     margin-left: 70px;
 }
 
+.register{
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+.register p a{
+    text-decoration: none;
+    color: red;
+    font-weight: 600;
+}
+.register p a:hover{
+    text-decoration: underline;
+}
+
+
 </style>
 </head>
 <body>
@@ -142,6 +158,9 @@ input{
                     </div>   
                     
                     <input type="submit" >
+                    <div class="register">
+                        <p>if you want delete any admin  <a href="admin-delete.jsp">Click-Here</a></p>
+                    </div>
                     
                 </form>
             </div>

@@ -69,12 +69,12 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 91vh;
-    width: 100%;
-    
-    background: url("https://c1.wallpaperflare.com/preview/549/709/134/aircraft-airplane-clouds-dawn.jpg")no-repeat;
+    min-height: 92vh;
+    width: 100%;  
+    background: url("https://wallpaperaccess.com/full/2789934.jpg")no-repeat;
     background-position: center;
     background-size: cover;
+    z-index: 1;
 }
 .form-box{
     position: relative;
@@ -86,7 +86,9 @@ section{
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: center;
-    align-items: center; 
+   /*  align-items: center; */ 
+   margin-left: 90vh;
+   z-index: 2;
    
 
 }

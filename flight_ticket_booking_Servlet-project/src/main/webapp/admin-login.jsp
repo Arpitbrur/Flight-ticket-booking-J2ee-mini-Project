@@ -7,108 +7,142 @@
 <title>admin-login</title>
 
 <style>
-/* *{
-box-sizing: border-box;
-margin: 0px;
-padding: 0px;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
 }
-	.myLogin{
-	border: 2px solid green;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 150px;
-	width: 350px;
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;  
+    background: url("https://wallpaperaccess.com/full/6830806.jpg")no-repeat;
+    background-position: center;
+    background-size: cover;
 }
-.box{
-height: 25px;
-width: 180px;
+.form-box{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+   justify-content: center; 
+    align-items: center;
+    margin-top: 10vh;
 
 }
-.login{
-display: flex;justify-content: center;align-items: center;
-} */
+h2{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+.inputbox{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+input:focus ~ label,
+input:valid ~ label{
+top: -5px;
+}
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding:0 35px 0 5px;
+    color: #fff;
+}
+.inputbox ion-icon{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    top: 20px;
+}
 
-* {
-			box-sizing: border-box;
-			margin: 0px;
-			padding: 0px;
-
-		}
-
-		body {
-			background: linear-gradient(#a8e6cf, #fdffab, #ffd3b6, #ffaaa5);
-			height: 100vh;
-			display: flex;
-			flex-direction: column;
-			/* justify-content: center; */
-			align-items: center;
-
-		}
-
-		.myLogin {
-			background-color: aliceblue;
-			box-shadow: whitesmoke 0 0 30px;
-			border: 2px solid green;
-			border-radius: 20px;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			height: 230px;
-			width: 480px;
-			margin-top: 120px;
-		}
-
-		.myLogin label {
-			font-size: 30px;
-			color: brown;
-		}
-		.myLogin input{
-			font-size: 22px;
-			size: 60px;
-			background-color: #a8e6cf;
-			padding: 3px;
-			margin-left: 10px;
-		}
-		form input:last-child{
-			/*background-color: red; */
-			margin-left: 180px;
-			border-radius: 10px;
-			padding: 4px;
-		}
-
-		form input:last-child:hover{
-			background-color: cornsilk;
-			font-size: 23px;
-		}
-		h1{
-			font-family: cursive;
-			font-size: 40px;
-			font-weight: bold;
-			font-style: italic;
-			/* background-color: #fdffab; */
-		}
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+.register{
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+.register p a{
+    text-decoration: none;
+    color: red;
+    font-weight: 600;
+}
+.register p a:hover{
+    text-decoration: underline;
+}
+						
+			
 </style>
 </head>
 
 <body>
 
-	<!-- <div class="myLogin">
+
+	 <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form action="loginAdmin" method="post">
+                    <h2>Admin-Login</h2>
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" name="adminEmail"  required>
+                        <label id="myEmail">admin Email</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" name="adminPassword" required>
+                        <label id="myPassword">admin password</label>
+                    </div>
+                    
+                    <button>Log in</button>
+                    <div class="register">
+                        <p>if not signUp please <a href="admin-insert.jsp">SignUP</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 	
-		<form action="loginAdmin" method= "post">
 	
-		<label id="myEmail" >Email: -</label>
-		<input type = "email" placeholder="Enter your Email" name="adminEmail" class="box"><br><br>
-		
-		<label id="myPassword" >Password: - </label>
-		<input type = "password" placeholder="Enter your Password" name="adminPassword" class="box"><br><br>
-		
-		<input type ="submit" value ="Login" class="login">
-	</form>
-	</div> -->
-	
-	
-	<h1>Admin Login here</h1>
+	<!-- <h1>Admin Login here</h1>
 
 	<section class="section">
 		<div class="myLogin">
@@ -124,6 +158,6 @@ display: flex;justify-content: center;align-items: center;
 				<input type="submit" value="Login" class="login">
 			</form>
 		</div>
-	</section>
+	</section> -->
 </body>
 </html>

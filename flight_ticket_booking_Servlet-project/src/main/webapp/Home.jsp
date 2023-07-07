@@ -63,18 +63,18 @@
         }
 
 
-        .air-logo {
+       /*  .air-logo {
             background-image: url("https://o.remove.bg/downloads/10a96cc2-577e-4dec-a6aa-a21bf4046f83/logo-removebg-preview.png");
             background-repeat: no-repeat;
             background-size: cover;
             height: 13vh;
             width: 25vh;
-            /* background-position: 0px; */
-        }
+            background-position: 0px; 
+        } */
 
         .main-page{
             /* background-color: red; */
-            height: 87vh;
+            height: 92vh;
             background-image: url("https://img.freepik.com/premium-photo/airplane-taking-off-from-airport_37416-74.jpg?w=1380");
             background-repeat: no-repeat;
             background-size: cover;
@@ -123,24 +123,12 @@
 </head>
 <body>
 	
-<%-- <jsp:include page="home-navbar.jsp"></jsp:include>
-		<section>
-		<article>
-			<div class="navigation">
-				<img alt="flight"
-					src="https://images.hindustantimes.com/img/2023/02/03/1600x900/Indigo-recorded_1675424472908_1675424473122_1675424473122.jpg">
-				<div>Start your Journey with Himanshu Air wala</div>
-			</div>
-		</article>
-	</section> --%>
-	
 	
 	<header>
-        <div class="air-logo"></div>
+  <!--       <div class="air-logo"></div> -->
         <nav class="navbar">
             <ul>
-                <li><a href="admin-insert.jsp">Admin-Insert</a></li>
-                <li><a href="admin-delete.jsp">Admin-Delete</a></li>
+                
                 <li><a href="admin-login.jsp">Admin Login</a></li>
                 <li><a href="user-login.jsp">User Login</a></li>
                 

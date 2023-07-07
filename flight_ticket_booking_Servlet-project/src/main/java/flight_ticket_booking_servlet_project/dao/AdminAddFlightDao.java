@@ -92,7 +92,7 @@ public class AdminAddFlightDao {
 	
 	// update flight------------------------------------------------------------------------------
 	public int updateFlight(AdminAddFlight addFlight) {
-		String query = "Update flightdetails set flightNumber=?, flightSource=?, flightDestination=?, flightDepartureTime=?, flightArrivalTime=?, flightEconomyPrice=?, flightBusinessPrice=?";
+		String query = "Update flightdetails set flightName=?, flightSource=?, flightDestination=?, flightDepartureTime=?, flightArrivalTime=?, flightEconomyPrice=?, flightBusinessPrice=?";
 		try {
 			PreparedStatement preparedStatement = connection.prepareStatement(query);
 			preparedStatement.setString(1, addFlight.getFlightName());
@@ -119,8 +119,36 @@ public class AdminAddFlightDao {
 		return 0;
 	} 
 	
+	// getAllFlightByNumber-----------------------------------------------------------------------------
+	public AdminAddFlight getFlightByNumber(int flightNumber)
+	{
+		String query = "Select * from flightdetails where flightNumber=?";
+		try {
+			PreparedStatement preparedStatement = connection.prepareStatement(query);
+			preparedStatement.setInt(1, flightNumber);
+			ResultSet resultSet = preparedStatement.executeQuery();
+			resultSet.next();
+			
+			AdminAddFlight addFlight = new AdminAddFlight();
+			
+			addFlight.setFlightNumber(resultSet.getInt("flightNumber"));
+			addFlight.setFlightName(resultSet.getString("flightName"));
+			addFlight.setFlightSource(resultSet.getString("flightSource"));
+			addFlight.setFlightDestination(resultSet.getString("flightDestination"));
+			addFlight.setFlightDepartureTime(resultSet.getTime("flightDepartureTime"));
+			addFlight.setFlightArrivalTime(resultSet.getTime("flightArrivalTime"));
+			addFlight.setFlightEconomyPrice(resultSet.getDouble("flightEconomyPrice"));
+			addFlight.setFlightBusinessPrice(resultSet.getDouble("flightBusinessPrice"));
+			return addFlight;
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return null;
+	}
 	
-	//get flightBy SourceToDestination------------------------------------------------------------
+	
+	//getAllflightBySourceToDestination------------------------------------------------------------
 	public List<AdminAddFlight> getFlightBySourceToDestination(String Source, String Destination){
 		
 		List<AdminAddFlight> addFlights = getAllFlight();
