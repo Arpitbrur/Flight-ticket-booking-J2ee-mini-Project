@@ -75,9 +75,12 @@
         .main-page{
             /* background-color: red; */
             height: 92vh;
-            background-image: url("https://img.freepik.com/premium-photo/airplane-taking-off-from-airport_37416-74.jpg?w=1380");
+           /*  background-image: url("https://img.freepik.com/premium-photo/airplane-taking-off-from-airport_37416-74.jpg?w=1380"); */
+           	background-image:url("image/vistara.jpg");
             background-repeat: no-repeat;
             background-size: cover;
+            display: flex;
+            flex-direction: column;
         }
         .main-page h1{
             /* background-color: red; */

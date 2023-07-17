@@ -185,7 +185,7 @@
         
              </select><br><br> -->
 
-            <input type="submit" value="add Flight">
+            <input type="submit" value="Update Flight">
         </form>
     </div>
 </section>

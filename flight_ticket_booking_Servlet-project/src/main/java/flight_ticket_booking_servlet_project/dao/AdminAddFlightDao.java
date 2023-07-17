@@ -92,7 +92,7 @@ public class AdminAddFlightDao {
 	
 	// update flight------------------------------------------------------------------------------
 	public int updateFlight(AdminAddFlight addFlight) {
-		String query = "Update flightdetails set flightName=?, flightSource=?, flightDestination=?, flightDepartureTime=?, flightArrivalTime=?, flightEconomyPrice=?, flightBusinessPrice=?";
+		String query = "Update flightdetails set flightName=?, flightSource=?, flightDestination=?, flightDepartureTime=?, flightArrivalTime=?, flightEconomyPrice=?, flightBusinessPrice=? where flightNumber=?";
 		try {
 			PreparedStatement preparedStatement = connection.prepareStatement(query);
 			preparedStatement.setString(1, addFlight.getFlightName());
@@ -102,6 +102,7 @@ public class AdminAddFlightDao {
 			preparedStatement.setTime(5, addFlight.getFlightArrivalTime());
 			preparedStatement.setDouble(6, addFlight.getFlightEconomyPrice());
 			preparedStatement.setDouble(7, addFlight.getFlightBusinessPrice());
+			preparedStatement.setDouble(8, addFlight.getFlightNumber());
 			
 			return preparedStatement.executeUpdate();
 		} catch (SQLException e) {

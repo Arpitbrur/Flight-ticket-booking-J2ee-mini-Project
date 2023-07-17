@@ -49,9 +49,9 @@
 			</tr>
 			<%} %>
 			
-			<%if(addFlight.getFlightName().equalsIgnoreCase("GoAir")){ %>
+					<%if(addFlight.getFlightName().equalsIgnoreCase("goAir")){ %>
 			<tr>
-				<td><img alt ="GoAir" src="" width="100px" height="80px"></td>
+				<td><img alt ="goAir" src="image/wp9133547.jpg" width="100" height="80"></td>
 				<td><%=addFlight.getFlightNumber()%></td>
 				<td><%=addFlight.getFlightName()%></td>
 				<td><%=addFlight.getFlightSource()%></td>
@@ -63,8 +63,25 @@
 				<td><a href="deleteFlight?flightNumber=<%=addFlight.getFlightNumber()%>"><button>DELETE</button></a></td>
 				<td><a href="admin-edit-flight.jsp?flightNumber=<%=addFlight.getFlightNumber()%>"><button>Update</button></a></td>
 			</tr>
+
 			<%} %>
 			
+			<%if(addFlight.getFlightName().equalsIgnoreCase("Akasha-Air")){ %>
+			<tr>
+				<td><img alt ="Akasha-Air" src="image/vistara.jpg" width="100" height="80"></td>
+				<td><%=addFlight.getFlightNumber()%></td>
+				<td><%=addFlight.getFlightName()%></td>
+				<td><%=addFlight.getFlightSource()%></td>
+				<td><%=addFlight.getFlightDestination()%></td>
+				<td><%=addFlight.getFlightDepartureTime()%></td>
+				<td><%=addFlight.getFlightArrivalTime()%></td>
+				<td><%=addFlight.getFlightEconomyPrice()%></td>
+				<td><%=addFlight.getFlightBusinessPrice()%></td>
+				<td><a href="deleteFlight?flightNumber=<%=addFlight.getFlightNumber()%>"><button>DELETE</button></a></td>
+				<td><a href="admin-edit-flight.jsp?flightNumber=<%=addFlight.getFlightNumber()%>"><button>Update</button></a></td>
+			</tr>
+
+			<%} %>
 			<%} %>
 		</table>
 	</div>
