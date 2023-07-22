@@ -30,18 +30,20 @@ public class FlightBookingController extends HttpServlet{
 		bookingDetails.setPnr(pnr);
 		bookingDetails.setName(req.getParameter("name"));
 		bookingDetails.setEmail(req.getParameter("email"));
+		bookingDetails.setEmail(req.getParameter("email"));
 		bookingDetails.setAge(Integer.parseInt(req.getParameter("age")));
 		bookingDetails.setGender(req.getParameter("gender"));
 		bookingDetails.setPhone(phone);
 		bookingDetails.setPrice(Double.parseDouble(req.getParameter("price")));
 		bookingDetails.setFlightNumber(Integer.parseInt(req.getParameter("number")));
 		
+		req.setAttribute("pnr", pnr);
 		FlightBookingDetails details = bookingDao.saveBookingDetails(bookingDetails);
+		
 		if(details!=null)
 		{
 			RequestDispatcher dispatcher = req.getRequestDispatcher("user-flight-display.jsp");
 			dispatcher.forward(req, resp);
 		}
-		bookingDetails.setPnr(pnr);
 	}
 }

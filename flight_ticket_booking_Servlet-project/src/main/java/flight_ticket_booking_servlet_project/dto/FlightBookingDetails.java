@@ -10,6 +10,7 @@ public class FlightBookingDetails {
 	private int age;
 	private String gender;
 	private double price;
+	private String userEmail;
 	
 	public long getPnr() {
 		return pnr;
@@ -59,6 +60,11 @@ public class FlightBookingDetails {
 	public void setPrice(double price) {
 		this.price = price;
 	}
-	
+	public String getUserEmail() {
+		return userEmail;
+	}
+	public void setUserEmail(String userEmail) {
+		this.userEmail = userEmail;
+	}
 	
 }

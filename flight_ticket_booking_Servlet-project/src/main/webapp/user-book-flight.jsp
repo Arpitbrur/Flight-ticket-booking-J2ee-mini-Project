@@ -13,7 +13,7 @@
 	<%
 	String flightNumber = request.getParameter("flightNumber");
 	AdminAddFlightDao addFlightDao = new AdminAddFlightDao();
-
+	String email = (String)request.getAttribute("email1");
 	AdminAddFlight addFlight = addFlightDao.getFlightByNumber(Integer.parseInt(flightNumber));
 	%>
 	<div>
@@ -36,6 +36,9 @@
 
 			<label id="PassengerAge">PassengerAge</label><br> <input
 				type="number" placeholder="enter passenger age" name="age"><br>
+				
+			<label id="PassengerAge">UserEmail</label><br> <input
+				type="email" name="userEmail" value="userEmail"><br>
 
 			<label id="PassengerGender">Gender</label><br> <input
 				type="radio" name="gender" value="Male">Male&nbsp; <input

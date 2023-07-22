@@ -111,8 +111,9 @@ button{
 <body>
 	
 	<%
-		String email = (String)request.getAttribute("userEmail");
-		String password = (String)request.getAttribute("userPassword");
+		String email = (String)request.getAttribute("emailMsg");
+		String password = (String)request.getAttribute("passMsg");
+		
 	%>
 </head>
 <body>
@@ -123,11 +124,17 @@ button{
                     <h2>User Login</h2>
                     <div class="inputbox">
                         <ion-icon name="mail-outline"></ion-icon>
+                        <%if(email!=null) {%>
+                        	<h4 style='color: red'><%=email %></h4>
+                        <%} %>
                         <input type="email" name="userEmail"  required>
                         <label id="myEmail">User Email</label>
                     </div>
                     <div class="inputbox">
                         <ion-icon name="lock-closed-outline"></ion-icon>
+                        <%if(password!=null) {%>
+                        	<h4 style='color: red'><%=password %></h4>
+                        <%} %>
                         <input type="password" name="userPassword" required>
                         <label id="myPassword">User password</label>
                     </div>

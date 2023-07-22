@@ -134,6 +134,7 @@
                 
                 <li><a href="admin-login.jsp">Admin Login</a></li>
                 <li><a href="user-login.jsp">User Login</a></li>
+                <li><a href="pnrClass">PNR</a></li>
                 
             </ul>
         </nav>       

@@ -1,5 +1,3 @@
-<%@page import="java.util.ArrayList"%>
-<%@page import="java.util.List"%>
 <%@page import="flight_ticket_booking_servlet_project.dto.FlightBookingDetails"%>
 <%@page import="flight_ticket_booking_servlet_project.dao.FlightBookingDao"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -11,12 +9,13 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%
-	Long pnr = (Long)request.getAttribute("pnr");
-	FlightBookingDao bookingDao = new FlightBookingDao();
-	FlightBookingDetails details = bookingDao.getBookedflightBypnr(pnr);
-%>
-<table border="1">
+	<%
+		HttpSession httpSession = request.getSession();
+		Long pnr = (Long)httpSession.getAttribute("pnr");
+		FlightBookingDao dao = new FlightBookingDao();
+		FlightBookingDetails details = dao.getBookedflightBypnr(pnr);
+	%>
+	<table border="1">
 		<tr>
 			<th>PNR</th>
 			<th>name</th>
