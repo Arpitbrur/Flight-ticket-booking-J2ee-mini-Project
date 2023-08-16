@@ -167,15 +167,6 @@ input{
 </style>
 </head>
 <body>
-
-<!-- 	<nav>
-        <ul>
-            <li>Book Your Ticket</li>
-            <a href=""><li>Home</li></a>
-            <a href=""><li>MyTicket</li></a>
-        </ul>
-    </nav>
-     -->
      
      <header>
         <div class="air-logo"></div>

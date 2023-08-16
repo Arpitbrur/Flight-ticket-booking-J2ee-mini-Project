@@ -15,6 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 import flight_ticket_booking_servlet_project.dto.AdminAddFlight;
 import flight_ticket_booking_servlet_project.service.AdminAddFlightService;
 
+@SuppressWarnings("serial")
 @WebServlet("/admin-add-flight")
 public class AdminAddFlightController extends HttpServlet{
 

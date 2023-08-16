@@ -83,6 +83,37 @@
 			</tr>
 			<%} %>
 			
+			<%if(addFlight.getFlightName().equalsIgnoreCase("AirGo")){ %>
+			<tr>
+				<td><img alt ="AirGo" src="image/wp9133547.jpg" ></td>
+				<td><%=addFlight.getFlightNumber()%></td>
+				<td><%=addFlight.getFlightName()%></td>
+				<td><%=addFlight.getFlightSource()%></td>
+				<td><%=addFlight.getFlightDestination()%></td>
+				<td><%=addFlight.getFlightDepartureTime()%></td>
+				<td><%=addFlight.getFlightArrivalTime()%></td>
+				<td><%=addFlight.getFlightEconomyPrice()%></td>
+				<td><%=addFlight.getFlightBusinessPrice()%></td>
+				<td><a href="user-book-flight.jsp?flightNumber=<%=addFlight.getFlightNumber()%>"><button>Book</button></a></td>
+			</tr>
+			<%} %>
+			
+			<%if(addFlight.getFlightName().equalsIgnoreCase("AirIndia")){ %>
+			<tr>
+				<td><img alt ="AirIndia" src="image/wp9361759.jpg" width="100" height="80"></td>
+				<td><%=addFlight.getFlightNumber()%></td>
+				<td><%=addFlight.getFlightName()%></td>
+				<td><%=addFlight.getFlightSource()%></td>
+				<td><%=addFlight.getFlightDestination()%></td>
+				<td><%=addFlight.getFlightDepartureTime()%></td>
+				<td><%=addFlight.getFlightArrivalTime()%></td>
+				<td><%=addFlight.getFlightEconomyPrice()%></td>
+				<td><%=addFlight.getFlightBusinessPrice()%></td>
+				<td><a href="user-book-flight.jsp?flightNumber=<%=addFlight.getFlightNumber()%>"><button>Book</button></a></td>
+
+			</tr>
+
+			<%} %>
 			<%} %>
 		</table>
 	</div>
