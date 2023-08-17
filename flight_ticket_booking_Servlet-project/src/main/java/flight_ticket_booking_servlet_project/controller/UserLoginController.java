@@ -31,7 +31,7 @@ public class UserLoginController extends HttpServlet{
 		if(user!= null) {
 			if(userpass.equals(user.getUserPassword())) {
 				httpSession.setAttribute("email", user.getUserEmail());
-				 req.setAttribute("email1", user.getUserEmail()); 
+//				 req.setAttribute("email1", user.getUserEmail()); 
 				RequestDispatcher dispatcher = req.getRequestDispatcher("user-home.jsp");
 				dispatcher.forward(req, resp);
 			}else {

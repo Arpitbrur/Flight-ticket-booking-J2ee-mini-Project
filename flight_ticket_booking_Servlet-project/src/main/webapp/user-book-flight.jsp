@@ -11,9 +11,11 @@
 <body>
 
 	<%
+	HttpSession httpSession = request.getSession();
+	String email = (String)httpSession.getAttribute("email");
 	String flightNumber = request.getParameter("flightNumber");
 	AdminAddFlightDao addFlightDao = new AdminAddFlightDao();
-	String email = (String)request.getAttribute("email1");
+	
 	AdminAddFlight addFlight = addFlightDao.getFlightByNumber(Integer.parseInt(flightNumber));
 	%>
 	<div>
@@ -35,10 +37,10 @@
 				type="number" placeholder="enter passenger phone" name="phone"><br>
 
 			<label id="PassengerAge">PassengerAge</label><br> <input
-				type="number" placeholder="enter passenger age" name="age"><br>
+				type="number" placeholder="enter passenger age" name="age">
 				
-			<label id="PassengerAge">UserEmail</label><br> <input
-				type="email" name="userEmail" value="userEmail"><br>
+			<label id="PassengerAge" hidden="true">UserEmail</label> <input
+				type="email" name="userEmail" value="<%=email%>" hidden="true"><br>
 
 			<label id="PassengerGender">Gender</label><br> <input
 				type="radio" name="gender" value="Male">Male&nbsp; <input

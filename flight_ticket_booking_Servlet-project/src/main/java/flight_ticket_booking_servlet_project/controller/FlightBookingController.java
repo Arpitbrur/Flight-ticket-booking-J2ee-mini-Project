@@ -8,6 +8,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import flight_ticket_booking_servlet_project.dao.FlightBookingDao;
 import flight_ticket_booking_servlet_project.dto.FlightBookingDetails;
@@ -18,7 +19,8 @@ public class FlightBookingController extends HttpServlet{
 
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		
+		HttpSession httpSession = req.getSession();
+		String userEmail = (String)httpSession.getAttribute("email");
 		FlightBookingDetails bookingDetails = new FlightBookingDetails();
 		
 		FlightBookingDao bookingDao = new FlightBookingDao();
@@ -30,14 +32,14 @@ public class FlightBookingController extends HttpServlet{
 		bookingDetails.setPnr(pnr);
 		bookingDetails.setName(req.getParameter("name"));
 		bookingDetails.setEmail(req.getParameter("email"));
-		bookingDetails.setEmail(req.getParameter("email"));
+		bookingDetails.setUserEmail(userEmail);
 		bookingDetails.setAge(Integer.parseInt(req.getParameter("age")));
 		bookingDetails.setGender(req.getParameter("gender"));
 		bookingDetails.setPhone(phone);
 		bookingDetails.setPrice(Double.parseDouble(req.getParameter("price")));
 		bookingDetails.setFlightNumber(Integer.parseInt(req.getParameter("number")));
 		
-		req.setAttribute("pnr", pnr);
+		httpSession.setAttribute("pnr", pnr);
 		FlightBookingDetails details = bookingDao.saveBookingDetails(bookingDetails);
 		
 		if(details!=null)

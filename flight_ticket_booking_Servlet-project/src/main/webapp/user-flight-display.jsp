@@ -12,7 +12,8 @@
 </head>
 <body>
 <%
-	Long pnr = (Long)request.getAttribute("pnr");
+	HttpSession httpSession = request.getSession();
+	Long pnr = (Long)httpSession.getAttribute("pnr");
 	FlightBookingDao bookingDao = new FlightBookingDao();
 	FlightBookingDetails details = bookingDao.getBookedflightBypnr(pnr);
 %>
@@ -26,6 +27,7 @@
 			<th>gender</th>
 			<th>price</th>
 			<th>flightNumber</th>
+			<th>ShowTicket</th>
 		</tr>
 		<tr>
 			<td><%=details.getPnr()%></td>
@@ -36,6 +38,7 @@
 			<td><%=details.getGender() %></td>
 			<td><%=details.getPrice() %></td>
 			<td><%=details.getFlightNumber() %></td>
+			<td><a href="ticket.jsp"><button>ShowTicket</button></a></td>
 		</tr>
 	</table>
 </body>

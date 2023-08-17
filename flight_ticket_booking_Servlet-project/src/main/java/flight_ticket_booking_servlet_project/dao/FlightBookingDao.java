@@ -30,7 +30,7 @@ public class FlightBookingDao {
 			preparedStatement.setDouble(7, bookingDetails.getPrice());
 			preparedStatement.setInt(8, bookingDetails.getFlightNumber());
 			preparedStatement.setString(9, bookingDetails.getUserEmail());
-			
+
 			preparedStatement.execute();
 			
 			return bookingDetails;
@@ -70,5 +70,6 @@ public class FlightBookingDao {
 		}
 		return null;
 	}
+	
 	
 }
