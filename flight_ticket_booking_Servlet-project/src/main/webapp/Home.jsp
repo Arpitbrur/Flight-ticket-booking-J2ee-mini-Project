@@ -19,7 +19,7 @@
             align-items: center;
             justify-content: space-around;
         }
-
+        
         .navbar {
             /* background-color: aqua; */
             color:  aliceblue;
@@ -29,19 +29,16 @@
             position: sticky;
             margin-top: 0px;
             position: sticky;
-
         }
 
         .navbar ul {
             display: flex;
             list-style: none;
-
         }
 
 
         .navbar ul li {
             padding: 15px;
-
         }
 
         .navbar ul li a {
@@ -58,15 +55,13 @@
             border-radius: 10px;
             transition: all;
             transition-property: all;
-            transition-duration: 0.8s;
-            
+            transition-duration: 0.8s;           
         }
 
         .main-page{
             /* background-color: red; */
             height: 92vh;
-           /*  background-image: url("https://img.freepik.com/premium-photo/airplane-taking-off-from-airport_37416-74.jpg?w=1380"); */
-           	background-image:url("image/home.jpg");
+           	background-image:url("image/main.jpg");
             background-repeat: no-repeat;
             background-size: cover;
             display: flex;
@@ -77,19 +72,17 @@
             color:  aliceblue;
             font-size: 2.8rem;
             width: 80vh;
-            margin-left: 30rem;
+            margin-left: 40rem;
             padding-top: 8rem;
             display: flex;
             flex-direction: column;
-        
-
         }
         .main-page span{
             /* background-color: red; */
             font-size: 2.2rem;
             color:  aliceblue;
             width: 80vh;
-            margin-left: 30rem;
+            margin-left: 40rem;
             /* padding-top: 8rem; */
             display: flex;
             flex-direction: column;
@@ -100,7 +93,7 @@
             font-size: 1.5rem;
             width: 25vh;
             height:6vh;
-            margin-left: 36rem; 
+            margin-left: 46rem; 
             /* margin: 0.4rem; */ 
             padding: 0.4rem;
             display: flex;
@@ -118,29 +111,22 @@
         }
 </style>
 </head>
-<body>
-	
-	
+<body>	
 	<header>
         <nav class="navbar">
-            <ul>
-                
+            <ul>            
                 <li><a href="admin-login.jsp">Admin Login</a></li>
                 <li><a href="user-login.jsp">User Login</a></li>
-                <li><a href="pnrClass">PNR</a></li>
-                
+                <li><a href="pnrClass">PNR</a></li>               
             </ul>
         </nav>       
     </header>
     <section>
         <div class="main-page">        
-                <h1>Start your journey with us.</h1>
-                
+                <h1>Start your journey with us.</h1>                
                 <span>Book your ticket for flight, <br> Let's travel together </span>
              
-                <button>Start Journey</button>  
-            
-                
+                <button>Start Journey</button>                 
         </div>     
     </section>
 </body>

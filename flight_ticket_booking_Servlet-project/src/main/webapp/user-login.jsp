@@ -19,8 +19,7 @@ section{
     align-items: center;
     min-height: 100vh;
     width: 100%;
-    
-    background: url("https://c4.wallpaperflare.com/wallpaper/245/935/679/airplane-aircraft-space-minimalism-wallpaper-preview.jpg")no-repeat;
+	background-image:url("image/user-login.jpg");    
     background-position: center;
     background-size: cover;
 }
@@ -151,15 +150,6 @@ button{
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
-	<!-- <div class="myLogin">
-        <form action="userLogin" method="post">
-            <label id="myEmail">Email</label>
-            <input type="email" name="userEmail"><br><br>
-            <label id="myPassword">Password</label>
-            <input type="password" name="userPassword"><br><br>
-        <p>if not signUp please....<a href="user-registration.jsp">SignUp</a></p>
-            <input type="submit" value="Login">
-        </form>
-    </div> -->
+
 </body>
 </html>

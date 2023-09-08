@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>admin-login</title>
+<title>Admin-login</title>
 
 <style>
 
@@ -20,7 +20,7 @@ section{
     align-items: center;
     min-height: 100vh;
     width: 100%;  
-	background-image:url("image/admin-login.jpg");
+	background-image:url("image/admin-login1.jpg");
 	background-image:
     background-position: center;
     background-size: cover;
@@ -32,7 +32,7 @@ section{
     background: transparent;
     border: 2px solid rgba(255,255,255,0.5);
     border-radius: 20px;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(20px);
     display: flex;
     justify-content: center; 
     align-items: center;
@@ -113,7 +113,6 @@ button{
 </head>
 
 <body>
-
 
 	 <section>
         <div class="form-box">

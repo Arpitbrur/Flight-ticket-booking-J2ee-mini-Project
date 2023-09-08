@@ -16,62 +16,57 @@
     font-family: 'cursive',sans-serif;
 }
 
-
-        header {
-            background-image: linear-gradient( #7878e4, #d4d474, #91ca91, rgb(197, 163, 99));
+ header {
+            background-color: #001b94; 
             display: flex;
             align-items: center;
             justify-content: space-around;
         }
-
+        
         .navbar {
             /* background-color: aqua; */
+            color:  aliceblue;
             display: flex;
             justify-content: space-around;
             align-items: center;
             position: sticky;
             margin-top: 0px;
             position: sticky;
-
         }
 
         .navbar ul {
             display: flex;
             list-style: none;
-
         }
 
 
         .navbar ul li {
             padding: 15px;
-
         }
 
         .navbar ul li a {
             font-size: 22px;
             text-decoration: none;
-            color: black;
+            color:  aliceblue;
             padding: 10px;
         }
 
         .navbar ul li a:hover {
             color: white;
-            background-color: #8118218e;
+            background-color: #e878ea;
             padding: 10px;
-            border-radius: 20px;
+            border-radius: 10px;
             transition: all;
             transition-property: all;
-            transition-duration: 0.8s;
-            
+            transition-duration: 0.8s;           
         }
-
 section{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 92vh;
+    min-height: 100vh;
     width: 100%;  
-    background: url("https://wallpaperaccess.com/full/6830809.jpg")no-repeat;
+    background: url("image/user-home.jpg");
     background-position: center;
     background-size: cover;
 }
@@ -82,11 +77,11 @@ section{
     background: transparent;
     border: 2px solid rgba(255,255,255,0.5);
     border-radius: 20px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
     display: flex;
     justify-content: center;
-    /* align-items: center; */
-    margin-left: -50vh; 
+    align-items: center;
+    
    
 
 }
@@ -167,25 +162,22 @@ input{
 </style>
 </head>
 <body>
-     
-     <header>
-        <div class="air-logo"></div>
+ 	
+ 	<header>
         <nav class="navbar">
-            <ul>
-                <li><a href="Home.jsp">Home</a></li>
-                <li><a href="">MyTicket</a></li>
-                
+            <ul>            
+                <li><a href="user-login.jsp">User Login</a></li>
+                <li><a href="user-registration.jsp">User Register</a></li>
+                <li><a href="admin-flight-detail.jsp">Flight Details</a></li>               
             </ul>
         </nav>       
     </header>
-     
      <section>
         <div class="form-box">
             <div class="form-value">
                 <form action="searchUser" method="get">
                     <h2>User-Home</h2>
-                    <div class="inputbox">
-                        
+                    <div class="inputbox">                        
                         <input type="text" name="source" required>
                         <label for="">Source</label>
                     </div>
@@ -198,26 +190,13 @@ input{
                      
                         <input type="date" name="date" value="<%=LocalDate.now().plusDays(1)%>" required>
                         <label for="">Date</label>
-                    </div>
-                    
+                    </div>                  
                     <input type="submit" value="Search"/>
                     
                 </form>
             </div>
         </div>
     </section>
-   
-    
-    
-    <%-- <h2>User-Home</h2>
-    <div class="container">
-    <form action="">
-    	<input type="text" name="source" placeholder="Source"><br><br>
-    	<input type="text" name="destination" placeholder="Destination"><br><br>
-    	<input type="date" name="date" value="<%=LocalDate.now().plusDays(1)%>"><br><br>
-    	<input type=Button name="button" value="Search"><br><br>
-    </form>
-    </div> --%>
 
 </body>
 </html>

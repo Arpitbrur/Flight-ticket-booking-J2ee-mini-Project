@@ -14,23 +14,21 @@
     font-family: 'cursive',sans-serif;
 }
 
-
-
 section{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    width: 100%;
-    
-    background: url("https://c1.wallpaperflare.com/preview/549/709/134/aircraft-airplane-clouds-dawn.jpg")no-repeat;
+    width: 100%; 
+   /*  background: url("https://c1.wallpaperflare.com/preview/549/709/134/aircraft-airplane-clouds-dawn.jpg")no-repeat; */
+    background-image:url("image/register1.jpg");
     background-position: center;
     background-size: cover;
 }
 .form-box{
     position: relative;
     width: 400px;
-    height: 450px;
+    height: 420px;
     background: transparent;
     border: 2px solid rgba(255,255,255,0.5);
     border-radius: 20px;
@@ -170,26 +168,5 @@ input{
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 
-
-
-
-
-
-
-
-
-
-
-
-	<!-- <form action="adminInsert" method="post">
-			<label id="myId">Admin Id</label>
-			<input type="number"placeholder="Enter AdminId" name="adminId"><br><br>
-            <label id="myEmail">Admin Email</label>
-            <input type="email" placeholder="Enter AdminEmail" name="adminEmail"><br><br>
-            <label id="myPassword">Admin Password</label>
-            <input type="password" placeholder="Enter AdminPassword" name="adminPassword"><br><br>
-       		
-            <input type="submit" value="Login">
-        </form> -->
 </body>
 </html>

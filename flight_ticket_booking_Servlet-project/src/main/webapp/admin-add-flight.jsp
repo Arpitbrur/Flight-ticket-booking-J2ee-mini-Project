@@ -103,7 +103,7 @@
         
         
        form input:last-of-type{
-       		width:140px;
+       		width:180px;
 			margin-right:250px;
 			border-radius: 10px; 
 			padding: 3px;

@@ -15,63 +15,13 @@
 }
 
 
-        header {
-            background-image: linear-gradient( #7878e4, #d4d474, #91ca91, rgb(197, 163, 99));
-            /* background-color: #14bbb8b3, blue; */
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-        }
-
-        .navbar {
-            /* background-color: aqua; */
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            position: sticky;
-            margin-top: 0px;
-            position: sticky;
-
-        }
-
-        .navbar ul {
-            display: flex;
-            list-style: none;
-
-        }
-
-
-        .navbar ul li {
-            padding: 15px;
-
-        }
-
-        .navbar ul li a {
-            font-size: 22px;
-            text-decoration: none;
-            color: black;
-            padding: 10px;
-        }
-
-        .navbar ul li a:hover {
-            color: white;
-            background-color: #8118218e;
-            padding: 10px;
-            border-radius: 20px;
-            transition: all;
-            transition-property: all;
-            transition-duration: 0.8s;
-            
-        }
-
-
 section{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 92vh;
+    min-height: 100vh;
     width: 100%;  
-    background: url("https://wallpaperaccess.com/full/2789934.jpg")no-repeat;
+	background-image:url("image/user.jpg");
     background-position: center;
     background-size: cover;
     z-index: 1;
@@ -86,8 +36,7 @@ section{
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: center;
-   /*  align-items: center; */ 
-   margin-left: 90vh;
+   align-items: center;  
    z-index: 2;
    
 
@@ -169,30 +118,6 @@ input{
 </style>
 </head>
 <body>
-	
-	<!-- <nav>
-        <ul>
-            <li>Flight-Ticket-Booking</li>
-            <a href=""><li>Admin Home</li></a>
-            <a href="admin-flight-detail.jsp"><li>Flight Details</li></a>
-            <a href="adminlogout"><li>Logout</li></a>
-        </ul>
-    </nav> -->
-    
-    
-    <header>
-        <div class="air-logo"></div>
-        <nav class="navbar">
-            <ul>
-                <!--<li>Flight ticket booking</li>-->
-                <li><a href="user-home.jsp">User- Home</a></li>
-                <li><a href="admin-flight-detail.jsp">Flight details</a></li>
-                <li><a href="adminlogout">Logout</a></li>
-                
-            </ul>
-        </nav>       
-    </header>
-    
     
     <section>
         <div class="form-box">
@@ -231,20 +156,6 @@ input{
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-    
-    
-	<!-- <div class="myLogin">
-		<form action="userRegister" method="post">
-		<label>Name</label>
-		<input type="text" name="userName"><br><br>
-		<label>Email</label>
-		<input type="email" name="userEmail"><br><br>
-		<label>Password</label>
-		<input type="password" name="userPassword"><br><br>
-		<label>Confirm-Password</label>
-		<input type="password" name="confirmPassword"><br><br>
-		<input type="Submit" value="register">
-	</form>
-	</div> -->
+
 </body>
 </html>

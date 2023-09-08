@@ -21,8 +21,7 @@ section{
     align-items: center;
     min-height: 100vh;
     width: 100%;
-    
-    background: url("https://c4.wallpaperflare.com/wallpaper/517/658/402/photograph-sunset-wallpaper-preview.jpg")no-repeat;
+    background-image:url("image/delete-admin.jpg");
     background-position: center;
     background-size: cover;
 }
@@ -36,7 +35,7 @@ section{
     backdrop-filter: blur(4px);
     display: flex;
     justify-content: center;
-    margin-top: -200px;
+    align-items: center; 
     
 
 }
@@ -137,17 +136,6 @@ input{
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-	
-	
-	
-<!-- 	<form action="deleteAdmin" method="post">
-<label>Admin Id:- </label>
-<input type="number" name="adminId" placeholder="Enter your Id" ><br><br>
 
-<input type="Submit" name="delete" >
-
-<input type="reset" name="reset" >
-</form>
- -->	
 </body>
 </html>
