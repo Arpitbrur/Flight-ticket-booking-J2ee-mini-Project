@@ -20,7 +20,8 @@ section{
     align-items: center;
     min-height: 100vh;
     width: 100%;  
-    background: url("https://wallpaperaccess.com/full/6830806.jpg")no-repeat;
+	background-image:url("image/admin-login.jpg");
+	background-image:
     background-position: center;
     background-size: cover;
 }
@@ -31,9 +32,9 @@ section{
     background: transparent;
     border: 2px solid rgba(255,255,255,0.5);
     border-radius: 20px;
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(2px);
     display: flex;
-   justify-content: center; 
+    justify-content: center; 
     align-items: center;
     margin-top: 10vh;
 
@@ -141,23 +142,5 @@ button{
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 	
-	
-	<!-- <h1>Admin Login here</h1>
-
-	<section class="section">
-		<div class="myLogin">
-
-			<form action="loginAdmin" method="post">
-
-				<label id="myEmail">Email: -</label>
-				<input type="email" placeholder="Enter your Email" name="adminEmail" class="box"><br><br>
-
-				<label id="myPassword">Password: - </label>
-				<input type="password" placeholder="Enter your Password" name="adminPassword" class="box"><br><br>
-
-				<input type="submit" value="Login" class="login">
-			</form>
-		</div>
-	</section> -->
 </body>
 </html>

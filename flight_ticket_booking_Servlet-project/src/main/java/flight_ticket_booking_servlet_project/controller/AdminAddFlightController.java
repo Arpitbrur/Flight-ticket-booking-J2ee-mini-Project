@@ -6,6 +6,7 @@ import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -33,7 +34,6 @@ public class AdminAddFlightController extends HttpServlet{
 		String flightArrivalTime = req.getParameter("arrival-time");
 		double flightEconomyPrice = Double.parseDouble(req.getParameter("ticketEconomyPrice"));
 		double flightBusinessPrice = Double.parseDouble(req.getParameter("ticketBusinessPrice"));
-//		String ticketClass = req.getParameter("ticketType");
 		
 		DateFormat dateFormat = new SimpleDateFormat("HH:mm");
 		Time time = null;
@@ -59,19 +59,6 @@ public class AdminAddFlightController extends HttpServlet{
 		addFlight.setFlightBusinessPrice(flightBusinessPrice);
 		
 		addFlightService.saveAdminFlight(addFlight);
-		
-		
-		
-//		System.out.println("flightNumber:- "+flightNumber);
-//		System.out.println("flightName:- "	+flightName);	
-//		System.out.println("flightSource:- "+flightSource);
-//		System.out.println("flightDestination:- "+flightDestination);
-//		System.out.println("departureTime:- "+departureTime);
-//		System.out.println("arrivalTime:- "+arrivalTime);
-//		System.out.println("flightTicketprice:- "+flightEconomyPrice);
-//		System.out.println("flightTicketprice:- "+flightBusinessPrice);
-//		System.out.println("ticketClass:- "+ticketClass);
-		
 		
 		
 	}

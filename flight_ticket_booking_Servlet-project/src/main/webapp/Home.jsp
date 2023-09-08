@@ -14,8 +14,7 @@
         }
 
         header {
-            background-image: linear-gradient( #7878e4, #d4d474, #91ca91, rgb(197, 163, 99));
-            /* background-color: #14bbb8b3, blue; */
+            background-color: #001b94; 
             display: flex;
             align-items: center;
             justify-content: space-around;
@@ -23,6 +22,7 @@
 
         .navbar {
             /* background-color: aqua; */
+            color:  aliceblue;
             display: flex;
             justify-content: space-around;
             align-items: center;
@@ -47,36 +47,26 @@
         .navbar ul li a {
             font-size: 22px;
             text-decoration: none;
-            color: black;
+            color:  aliceblue;
             padding: 10px;
         }
 
         .navbar ul li a:hover {
             color: white;
-            background-color: #8118218e;
+            background-color: #e878ea;
             padding: 10px;
-            border-radius: 20px;
+            border-radius: 10px;
             transition: all;
             transition-property: all;
             transition-duration: 0.8s;
             
         }
 
-
-       /*  .air-logo {
-            background-image: url("https://o.remove.bg/downloads/10a96cc2-577e-4dec-a6aa-a21bf4046f83/logo-removebg-preview.png");
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 13vh;
-            width: 25vh;
-            background-position: 0px; 
-        } */
-
         .main-page{
             /* background-color: red; */
             height: 92vh;
            /*  background-image: url("https://img.freepik.com/premium-photo/airplane-taking-off-from-airport_37416-74.jpg?w=1380"); */
-           	background-image:url("image/vistara.jpg");
+           	background-image:url("image/home.jpg");
             background-repeat: no-repeat;
             background-size: cover;
             display: flex;
@@ -84,34 +74,38 @@
         }
         .main-page h1{
             /* background-color: red; */
+            color:  aliceblue;
             font-size: 2.8rem;
             width: 80vh;
-            margin-left: 10rem;
+            margin-left: 30rem;
             padding-top: 8rem;
             display: flex;
             flex-direction: column;
         
 
         }
-        .main-page p{
+        .main-page span{
             /* background-color: red; */
-            font-size: 2.8rem;
+            font-size: 2.2rem;
+            color:  aliceblue;
             width: 80vh;
-            margin-left: 15rem;
+            margin-left: 30rem;
             /* padding-top: 8rem; */
             display: flex;
             flex-direction: column;
         }
         .main-page button{
-            background-color: red;
+            background-color: #001b94;
+            color:  aliceblue;
             font-size: 1.5rem;
-            width: 19vh;
-            margin-left: 20rem;
-            /*margin: 0.4rem; */
-            padding-left: 1rem;
+            width: 25vh;
+            height:6vh;
+            margin-left: 36rem; 
+            /* margin: 0.4rem; */ 
+            padding: 0.4rem;
             display: flex;
             flex-direction: column;
-            border-radius: 2vh;
+            border-radius: 2vh; 
         }
 
         .main-page button:hover{
@@ -119,8 +113,8 @@
             transition: all;
             transition-property: all;
             transition-duration: 1s;
-            font-size: 1.6rem;
-            width:20vh;
+            font-size: 1.5rem;
+            width: 25vh;
         }
 </style>
 </head>
@@ -128,7 +122,6 @@
 	
 	
 	<header>
-  <!--       <div class="air-logo"></div> -->
         <nav class="navbar">
             <ul>
                 
@@ -141,9 +134,12 @@
     </header>
     <section>
         <div class="main-page">        
-                <h1>Book your ticket for flight</h1>
-                <p>Let's travel together</p>          
-                <button>Book now</button>
+                <h1>Start your journey with us.</h1>
+                
+                <span>Book your ticket for flight, <br> Let's travel together </span>
+             
+                <button>Start Journey</button>  
+            
                 
         </div>     
     </section>

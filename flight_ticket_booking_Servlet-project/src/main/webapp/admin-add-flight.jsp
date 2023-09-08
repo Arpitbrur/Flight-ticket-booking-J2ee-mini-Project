@@ -14,8 +14,7 @@
         }
 
         header {
-            background-image: linear-gradient(#7878e4, #d4d474, #91ca91, rgb(197, 163, 99));
-            /* background-color: #14bbb8b3, blue; */
+            background-color: #001b94; 
             display: flex;
             align-items: center;
             justify-content: space-around;
@@ -23,6 +22,7 @@
 
         .navbar {
             /* background-color: aqua; */
+            color:  aliceblue;
             display: flex;
             justify-content: space-around;
             align-items: center;
@@ -38,43 +38,31 @@
 
         }
 
-
         .navbar ul li {
             padding: 15px;
-
         }
 
         .navbar ul li a {
             font-size: 22px;
             text-decoration: none;
-            color: black;
+            color:  aliceblue;
             padding: 10px;
         }
 
         .navbar ul li a:hover {
             color: white;
-            background-color: #8118218e;
+            background-color: #e878ea;
             padding: 10px;
-            border-radius: 20px;
+            border-radius: 10px;
             transition: all;
             transition-property: all;
             transition-duration: 0.8s;
-
+            
         }
-
-        /* .air-logo {
-            background-image: url("https://o.remove.bg/downloads/10a96cc2-577e-4dec-a6aa-a21bf4046f83/logo-removebg-preview.png");
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 13vh;
-            width: 25vh;
-            background-position: 0px; 
-        }
- */
         .main-page{
             /* background-color: red; */
             height: 92vh;
-            background-image: url("https://c4.wallpaperflare.com/wallpaper/494/1023/719/sunset-the-sky-the-plane-in-the-air-wallpaper-preview.jpg");
+            background-image:url("image/admin-add-flight.jpg");
             background-repeat: no-repeat;
             background-size: cover;
         }
@@ -102,21 +90,31 @@
         form input{
             font-size: 22px;
 			size: 60px;
-			background-color: #dae0bf;
+			background-color: white;
 			padding: 3px;
 			margin-left: 10px;
             float: right;
-        }
-        form input:last-child{
-			 margin-right: 190px;
+            text-align: center;
+            padding: 2px 20px;
+			border: 1px solid #2fa8df;
+			border-radius: 5px;
+			width: 280px;
+		}
+        
+        
+       form input:last-of-type{
+       		width:140px;
+			margin-right:250px;
 			border-radius: 10px; 
 			padding: 3px;
 		}
 
-		form input:last-child:hover{
+		form input:last-of-type:hover{
 			background-color: cornsilk;
-			font-size: 23px;
-		}
+			color: aliceblue;
+			background-color: #001b94;
+			
+		} 
 
 
 
@@ -126,11 +124,10 @@
 
 
 <header>
-       <!--  <div class="air-logo"></div> -->
         <nav class="navbar">
             <ul>
                 <li><a href="Home.jsp">Admin-Home</a></li>
-                <li><a href="admin-flight-detail.jsp">flight-Detail</a></li>
+                <li><a href="admin-flight-detail.jsp">Flight-Detail</a></li>
                 <li><a href="adminLogout">Logout</a></li>
                 <li><a href="">Contact with us</a></li>
 
@@ -142,43 +139,31 @@
     <div class="flight">
         <form action="admin-add-flight" method="post">
             <label id="">Flight Number:- </label>
-            <input type="number" placeholder="Enter flight Number" name="flightNumber" class="common"><br><br>
+            <input type="number" placeholder="Enter flight Number" name="flightNumber" ><br><br>
 
             <label id="">Flight Name:- </label>
-            <input type="text" placeholder="Enter flight Name" name="flightName" class="common"><br><br>
+            <input type="text" placeholder="Enter flight Name" name="flightName" ><br><br>
 
             <label id="source">Source:- </label>
-            <input type="text" placeholder="Enter your Source" name="source" class="common"><br><br>
+            <input type="text" placeholder="Enter Source" name="source" ><br><br>
 
             <label id="destination">Destination:- </label>
-            <input type="text" placeholder="Enter your destination" name="destination" class="common"><br><br>
+            <input type="text" placeholder="Enter Destination" name="destination" ><br><br>
 
             <label id="departure-time">Departure-time:- </label>
-            <input type="time" placeholder="Enter departure time" name="departure-time" class="common"><br><br>
+            <input type="time" placeholder="Enter departure time" name="departure-time"><br><br>
 
             <label id="arrival-time">arrival-time:- </label>
-            <input type="time" placeholder="Enter arrival time" name="arrival-time" class="common"><br><br>
+            <input type="time" placeholder="Enter arrival time" name="arrival-time" ><br><br>
 
-            <label id="price">Flight-Economy-ticket-price:- </label>
-            <input type="number" placeholder="Enter flight economy ticket price " name="ticketEconomyPrice"
-                class="common"><br><br>
-
-
-            <label id="price">Flight-business-ticket-price:- </label>
-            <input type="number" placeholder="Enter flight business ticket price " name="ticketBusinessPrice"
-                class="common"><br><br>
-
-            <!-- <label id="flight-type">Flight-type </label> -->
+            <label id="price">Economy-ticket-price:- </label>
+            <input type="number" placeholder="Enter Economy Price " name="ticketEconomyPrice"><br><br>
 
 
-            <!-- <select name="ticketType" class="common">
-            <option>Select your class</option>
-            <option value="economy" class=" common">Economy</option>
-            <option value="Business" class="common">Business</option>
-        
-             </select><br><br> -->
+            <label id="price">Business-ticket-price:- </label>
+            <input type="number" placeholder="Enter Business Price " name="ticketBusinessPrice"><br><br>
 
-            <input type="submit" value="Add Flight">
+            <input type="submit" class="btn" value="Add Flight">
         </form>
     </div>
 </section>
