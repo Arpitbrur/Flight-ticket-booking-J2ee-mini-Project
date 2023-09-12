@@ -60,7 +60,7 @@ public class AdminAddFlightController extends HttpServlet{
 		
 		addFlightService.saveAdminFlight(addFlight);
 		
-		RequestDispatcher dispatcher = req.getRequestDispatcher("Home.jsp");
+		RequestDispatcher dispatcher = req.getRequestDispatcher("admin-add-flight.jsp");
 		dispatcher.forward(req, resp);
 	}
 }

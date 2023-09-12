@@ -133,9 +133,10 @@ tr:nth-child(odd) {
 			</tr>
 			
 			<%for(AdminAddFlight addFlight : addFlights) {%>
-				<%if(addFlight.getFlightName().equalsIgnoreCase("Indigo")){ %>
+			
+				<%if(addFlight.getFlightName().equalsIgnoreCase("indigo")){ %>
 			<tr>
-				<td><img alt ="indigo" src="https://1000logos.net/wp-content/uploads/2021/07/IndiGo-Logo.png" width="100px" height="80px" class="logo"></td>
+				<td><img alt ="indigo" src="image/wp9133939.jpg" width="100px" height="80px" class="logo"></td>
 				<td><%=addFlight.getFlightNumber()%></td>
 				<td><%=addFlight.getFlightName()%></td>
 				<td><%=addFlight.getFlightSource()%></td>
@@ -149,9 +150,9 @@ tr:nth-child(odd) {
 			</tr>
 			<%} %>
 			
-					<%if(addFlight.getFlightName().equalsIgnoreCase("GoAir")){ %>
+				<%if(addFlight.getFlightName().equalsIgnoreCase("goAir")){ %>
 			<tr>
-				<td><img alt ="goAir" src="image/wp9133547.jpg" width="100" height="80" class="logo"></td>
+				<td><img alt ="goAir" src="image/wp9133939.jpg" width="100px" height="80px" class="logo"></td>
 				<td><%=addFlight.getFlightNumber()%></td>
 				<td><%=addFlight.getFlightName()%></td>
 				<td><%=addFlight.getFlightSource()%></td>
@@ -163,12 +164,11 @@ tr:nth-child(odd) {
 				<td><a href="deleteFlight?flightNumber=<%=addFlight.getFlightNumber()%>"><button class="delete">Delete</button></a></td>
 				<td><a href="admin-edit-flight.jsp?flightNumber=<%=addFlight.getFlightNumber()%>"><button class="update">Update</button></a></td>
 			</tr>
-
 			<%} %>
 			
-			<%if(addFlight.getFlightName().equalsIgnoreCase("AkashaAir")){ %>
+				<%if(addFlight.getFlightName().equalsIgnoreCase("Akasha-Air")){ %>
 			<tr>
-				<td><img alt ="Akasha-Air" src="image/vistara.jpg" width="100" height="80" class="logo"></td>
+				<td><img alt ="Akasha-Air" src="image/wp9133939.jpg" width="100px" height="80px" class="logo"></td>
 				<td><%=addFlight.getFlightNumber()%></td>
 				<td><%=addFlight.getFlightName()%></td>
 				<td><%=addFlight.getFlightSource()%></td>
@@ -180,12 +180,11 @@ tr:nth-child(odd) {
 				<td><a href="deleteFlight?flightNumber=<%=addFlight.getFlightNumber()%>"><button class="delete">Delete</button></a></td>
 				<td><a href="admin-edit-flight.jsp?flightNumber=<%=addFlight.getFlightNumber()%>"><button class="update">Update</button></a></td>
 			</tr>
-
 			<%} %>
 			
-			<%if(addFlight.getFlightName().equalsIgnoreCase("AirGo")){ %>
+				<%if(addFlight.getFlightName().equalsIgnoreCase("AirGo")){ %>
 			<tr>
-				<td><img alt ="AirGo" src="image/wp9133547.jpg" width="100" height="80" class="logo"></td>
+				<td><img alt ="AirGo" src="image/wp9133939.jpg" width="100px" height="80px" class="logo"></td>
 				<td><%=addFlight.getFlightNumber()%></td>
 				<td><%=addFlight.getFlightName()%></td>
 				<td><%=addFlight.getFlightSource()%></td>
@@ -197,12 +196,11 @@ tr:nth-child(odd) {
 				<td><a href="deleteFlight?flightNumber=<%=addFlight.getFlightNumber()%>"><button class="delete">Delete</button></a></td>
 				<td><a href="admin-edit-flight.jsp?flightNumber=<%=addFlight.getFlightNumber()%>"><button class="update">Update</button></a></td>
 			</tr>
-
 			<%} %>
 			
-			<%if(addFlight.getFlightName().equalsIgnoreCase("AirIndia")){ %>
+				<%if(addFlight.getFlightName().equalsIgnoreCase("AirIndia")){ %>
 			<tr>
-				<td><img alt ="AirIndia" src="image/wp9361759.jpg" width="100" height="80" class="logo"></td>
+				<td><img alt ="AirIndia" src="image/wp9133939.jpg" width="100px" height="80px" class="logo"></td>
 				<td><%=addFlight.getFlightNumber()%></td>
 				<td><%=addFlight.getFlightName()%></td>
 				<td><%=addFlight.getFlightSource()%></td>
@@ -214,7 +212,6 @@ tr:nth-child(odd) {
 				<td><a href="deleteFlight?flightNumber=<%=addFlight.getFlightNumber()%>"><button class="delete">Delete</button></a></td>
 				<td><a href="admin-edit-flight.jsp?flightNumber=<%=addFlight.getFlightNumber()%>"><button class="update">Update</button></a></td>
 			</tr>
-
 			<%} %>
 			<%} %>
 		</table>

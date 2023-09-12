@@ -111,20 +111,29 @@ button{
 			
 </style>
 </head>
-
+	<%
+		HttpSession httpSession = request.getSession();
+		String password = (String)request.getAttribute("pass");
+		String email = (String)request.getAttribute("message");
+	%>
 <body>
-
 	 <section>
         <div class="form-box">
             <div class="form-value">
                 <form action="loginAdmin" method="post">
-                    <h2>Admin-Login</h2>
+                    <h2>AdminLogin</h2>
                     <div class="inputbox">
+                    <%if(email!=null){ %>
+                    	<h4 style="color:red"><%=email %></h4>
+                    	<%} %>
                         <ion-icon name="mail-outline"></ion-icon>
                         <input type="email" name="adminEmail"  required>
-                        <label id="myEmail">admin Email</label>
+                        <label id="myEmail">AdminEmail</label>
                     </div>
                     <div class="inputbox">
+                    	<%if(password!=null){ %>
+                    	<h4 style="color:red"><%=password %></h4>
+                    	<%} %>
                         <ion-icon name="lock-closed-outline"></ion-icon>
                         <input type="password" name="adminPassword" required>
                         <label id="myPassword">admin password</label>

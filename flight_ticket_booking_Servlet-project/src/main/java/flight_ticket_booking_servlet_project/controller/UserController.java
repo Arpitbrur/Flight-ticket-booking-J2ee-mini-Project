@@ -1,7 +1,6 @@
 package flight_ticket_booking_servlet_project.controller;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;

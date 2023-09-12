@@ -19,6 +19,7 @@ public class AdminDeleteFlightController extends HttpServlet{
 		
 		AdminAddFlightService addFlightService = new AdminAddFlightService();
 		
+		addFlightService.updateFlightNumberByNull(Integer.parseInt(req.getParameter("flightNumber")));
 		addFlightService.deleteFlight(Integer.parseInt(req.getParameter("flightNumber")));
 		
 		RequestDispatcher dispatcher = req.getRequestDispatcher("admin-flight-detail.jsp");

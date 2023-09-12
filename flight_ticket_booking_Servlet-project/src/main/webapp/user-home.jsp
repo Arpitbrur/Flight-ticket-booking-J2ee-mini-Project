@@ -64,7 +64,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 92vh;
     width: 100%;  
     background: url("image/user-home.jpg");
     background-position: center;
@@ -166,7 +166,7 @@ input{
  	<header>
         <nav class="navbar">
             <ul>            
-                <li><a href="user-login.jsp">User Login</a></li>
+                
                 <li><a href="user-registration.jsp">User Register</a></li>
                 <li><a href="admin-flight-detail.jsp">Flight Details</a></li>               
             </ul>

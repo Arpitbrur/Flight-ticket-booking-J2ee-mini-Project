@@ -14,6 +14,7 @@ import javax.servlet.http.HttpSession;
 import flight_ticket_booking_servlet_project.dto.User;
 import flight_ticket_booking_servlet_project.service.UserService;
 
+@SuppressWarnings("serial")
 @WebServlet("/userLogin")
 public class UserLoginController extends HttpServlet{
 

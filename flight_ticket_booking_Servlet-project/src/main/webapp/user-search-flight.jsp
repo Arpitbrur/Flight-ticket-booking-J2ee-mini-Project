@@ -191,7 +191,7 @@ tr:nth-child(odd) {
 			
 			<%if(addFlight.getFlightName().equalsIgnoreCase("AirIndia")){ %>
 			<tr>
-				<td><img alt ="AirIndia" src="image/wp9361759.jpg" width="100" height="80" class="logo"></td>
+				<td><img alt ="AirIndia" src="image/AirIndia-logo.jpg" width="100" height="80" class="logo"></td>
 				<td><%=addFlight.getFlightNumber()%></td>
 				<td><%=addFlight.getFlightName()%></td>
 				<td><%=addFlight.getFlightSource()%></td>

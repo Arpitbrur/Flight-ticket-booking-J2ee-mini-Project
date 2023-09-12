@@ -39,18 +39,13 @@ public class AdminDao {
 	}
 	
 	// delete Admin----------------------------------------------------------------
-	public void deleteAdmin(int adminId) {
-		
+	public void deleteAdmin(int adminId) {		
 		String delete = "delete from admin where adminId=?";
 		
 		try {
-			PreparedStatement preparedStatement = connection.prepareStatement(delete);
-			
-			preparedStatement.setInt(1, adminId);
-			
-			preparedStatement.executeUpdate();
-			
-			
+			PreparedStatement preparedStatement = connection.prepareStatement(delete);			
+			preparedStatement.setInt(1, adminId);			
+			preparedStatement.executeUpdate();	
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

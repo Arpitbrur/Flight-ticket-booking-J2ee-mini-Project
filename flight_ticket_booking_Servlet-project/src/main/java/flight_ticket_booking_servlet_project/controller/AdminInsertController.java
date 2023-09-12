@@ -13,6 +13,7 @@ import flight_ticket_booking_servlet_project.dto.Admin;
 import flight_ticket_booking_servlet_project.service.AdminService;
 
 
+@SuppressWarnings("serial")
 @WebServlet("/adminInsert")
 public class AdminInsertController extends HttpServlet {
 

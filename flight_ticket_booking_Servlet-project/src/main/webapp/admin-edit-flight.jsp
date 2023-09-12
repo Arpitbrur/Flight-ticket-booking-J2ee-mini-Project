@@ -130,7 +130,7 @@
 <header>
         <nav class="navbar">
             <ul>
-                <li><a href="Home.jsp">Admin-Home</a></li>
+                <li><a href="home.jsp">Admin-Home</a></li>
                 <li><a href="admin-flight-detail.jsp">flight-Detail</a></li>
                 <li><a href="adminLogout">Logout</a></li>
 

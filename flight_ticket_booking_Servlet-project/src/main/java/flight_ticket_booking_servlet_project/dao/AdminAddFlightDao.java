@@ -163,4 +163,20 @@ public class AdminAddFlightDao {
 		}
 		return filterFlightDetails;
 	}
+	
+	// updateFlightNumberByNull----------------------------------------------------------------------
+	public int updateFlightNumberByNull(int FlightNumber) {
+		String query = "Update flightbookdetails set flightNumber = Null where flightNumber=?";
+		try {
+			PreparedStatement preparedStatement = connection.prepareStatement(query);
+			
+			preparedStatement.setInt(1, FlightNumber);
+			int res = preparedStatement.executeUpdate();
+			return res;
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return 0;
+	}
 }

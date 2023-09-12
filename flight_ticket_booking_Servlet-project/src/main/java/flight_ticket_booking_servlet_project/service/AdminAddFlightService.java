@@ -21,4 +21,9 @@ public class AdminAddFlightService {
 	public int updateFlight(AdminAddFlight addFlight) {
 		return addFlightDao.updateFlight(addFlight);
 	}	
+	
+	// updateFlightNumberByNull----------------------------------------------------------------------
+	public int updateFlightNumberByNull(int FlightNumber) {
+		return addFlightDao.updateFlightNumberByNull(FlightNumber);
+	}	
 }

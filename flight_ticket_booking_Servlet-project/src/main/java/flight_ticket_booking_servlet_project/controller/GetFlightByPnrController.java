@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
+@SuppressWarnings("serial")
 @WebServlet(value="/pnrClass")
 public class GetFlightByPnrController extends HttpServlet
 {

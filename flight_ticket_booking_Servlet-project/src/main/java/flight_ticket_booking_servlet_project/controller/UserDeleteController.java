@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import flight_ticket_booking_servlet_project.dto.User;
 import flight_ticket_booking_servlet_project.service.UserService;
 
+@SuppressWarnings("serial")
 @WebServlet("/deleteUser")
 public class UserDeleteController extends HttpServlet{
 

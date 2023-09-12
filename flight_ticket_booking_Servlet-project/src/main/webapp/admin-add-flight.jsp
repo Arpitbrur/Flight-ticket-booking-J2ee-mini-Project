@@ -126,7 +126,7 @@
 <header>
         <nav class="navbar">
             <ul>
-                <li><a href="Home.jsp">Admin-Home</a></li>
+                <li><a href="home.jsp">Admin-Home</a></li>
                 <li><a href="admin-flight-detail.jsp">Flight-Detail</a></li>
                 <li><a href="adminLogout">Logout</a></li>
                 <li><a href="">Contact with us</a></li>
@@ -163,7 +163,7 @@
             <label id="price">Business-ticket-price:- </label>
             <input type="number" placeholder="Enter Business Price " name="ticketBusinessPrice"><br><br>
 
-            <input type="submit" class="btn" value="Add Flight">
+            <input type="submit" class="btn" value="AddFlight">
         </form>
     </div>
 </section>

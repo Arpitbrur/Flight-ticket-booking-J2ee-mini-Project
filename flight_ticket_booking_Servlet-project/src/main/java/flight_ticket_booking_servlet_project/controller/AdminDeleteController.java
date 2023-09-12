@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import flight_ticket_booking_servlet_project.dto.Admin;
 import flight_ticket_booking_servlet_project.service.AdminService;
 
+@SuppressWarnings("serial")
 @WebServlet("/deleteAdmin")
 public class AdminDeleteController extends HttpServlet{
 
@@ -25,7 +26,7 @@ public class AdminDeleteController extends HttpServlet{
 		
 		adminService.deleteAdmin(id);
 		
-		RequestDispatcher dispatcher = req.getRequestDispatcher("Home.jsp");
+		RequestDispatcher dispatcher = req.getRequestDispatcher("home.jsp");
 		dispatcher.include(req, resp);
 	}
 }
