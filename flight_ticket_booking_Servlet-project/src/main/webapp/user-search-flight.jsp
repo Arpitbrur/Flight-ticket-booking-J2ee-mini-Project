@@ -130,7 +130,7 @@ tr:nth-child(odd) {
 			<%for(AdminAddFlight addFlight : addFlights) {%>
 			<%if(addFlight.getFlightName().equalsIgnoreCase("indigo")){ %>
 			<tr>
-				<td><img alt ="indigo" src="image/wp9133939.jpg" width="100px" height="80px" class="logo"></td>
+				<td><img alt ="indigo" src="image/indigo logo.jpg" width="100px" height="80px" class="logo"></td>
 				<td><%=addFlight.getFlightNumber()%></td>
 				<td><%=addFlight.getFlightName()%></td>
 				<td><%=addFlight.getFlightSource()%></td>
@@ -146,7 +146,7 @@ tr:nth-child(odd) {
 			
 			<%if(addFlight.getFlightName().equalsIgnoreCase("goAir")){ %>
 			<tr>
-				<td><img alt ="goAir" src="image/wp2574353.jpg" width="100px" height="80px" class="logo"></td>
+				<td><img alt ="goAir" src="image/goAir logo.png" width="100px" height="80px" class="logo"></td>
 				<td><%=addFlight.getFlightNumber()%></td>
 				<td><%=addFlight.getFlightName()%></td>
 				<td><%=addFlight.getFlightSource()%></td>
@@ -161,7 +161,7 @@ tr:nth-child(odd) {
 			
 			<%if(addFlight.getFlightName().equalsIgnoreCase("Akasha-Air")){ %>
 			<tr>
-				<td><img alt ="Akasha-Air" src="image/wp9133547.jpg" width="100px" height="80px" class="logo"></td>
+				<td><img alt ="Akasha-Air" src="image/AkasaAir-logo.jpg" width="100px" height="80px" class="logo"></td>
 				<td><%=addFlight.getFlightNumber()%></td>
 				<td><%=addFlight.getFlightName()%></td>
 				<td><%=addFlight.getFlightSource()%></td>
@@ -176,7 +176,7 @@ tr:nth-child(odd) {
 			
 			<%if(addFlight.getFlightName().equalsIgnoreCase("AirGo")){ %>
 			<tr>
-				<td><img alt ="AirGo" src="image/wp9133547.jpg" width="100px" height="80px" class="logo"></td>
+				<td><img alt ="AirGo" src="image/AirGo-logo.jpg" width="100px" height="80px" class="logo"></td>
 				<td><%=addFlight.getFlightNumber()%></td>
 				<td><%=addFlight.getFlightName()%></td>
 				<td><%=addFlight.getFlightSource()%></td>
@@ -191,7 +191,7 @@ tr:nth-child(odd) {
 			
 			<%if(addFlight.getFlightName().equalsIgnoreCase("AirIndia")){ %>
 			<tr>
-				<td><img alt ="AirIndia" src="image/AirIndia-logo.jpg" width="100" height="80" class="logo"></td>
+				<td><img alt ="AirIndia" src="image/AIndia-logo.jpg" width="100" height="80" class="logo"></td>
 				<td><%=addFlight.getFlightNumber()%></td>
 				<td><%=addFlight.getFlightName()%></td>
 				<td><%=addFlight.getFlightSource()%></td>

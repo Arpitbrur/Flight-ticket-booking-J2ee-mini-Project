@@ -1,3 +1,4 @@
+<%@page import="java.time.LocalDate"%>
 <%@page import="flight_ticket_booking_servlet_project.dto.AdminAddFlight"%>
 <%@page import="flight_ticket_booking_servlet_project.dao.AdminAddFlightDao"%>
 <%@page import="flight_ticket_booking_servlet_project.dto.FlightBookingDetails"%>
@@ -228,6 +229,7 @@
 		
 		AdminAddFlightDao addFlightDao = new AdminAddFlightDao();
 		AdminAddFlight addFlight = addFlightDao.getFlightByNumber(details.getFlightNumber());
+		
 %>
 <body>
     <div class="main">

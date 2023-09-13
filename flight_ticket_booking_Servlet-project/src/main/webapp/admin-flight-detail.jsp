@@ -126,8 +126,8 @@ tr:nth-child(odd) {
 				<th>Destination</th>
 				<th>Departure-Time</th>
 				<th>Arrival-Time</th>
-				<th>EconomyPrice</th>
-				<th>BusinessPrice</th>
+				<th>Economy-Price</th>
+				<th>Business-Price</th>
 				<th>Delete</th>
 				<th>Update</th>
 			</tr>
@@ -136,7 +136,7 @@ tr:nth-child(odd) {
 			
 				<%if(addFlight.getFlightName().equalsIgnoreCase("indigo")){ %>
 			<tr>
-				<td><img alt ="indigo" src="image/wp9133939.jpg" width="100px" height="80px" class="logo"></td>
+				<td><img alt ="indigo" src="image/indigo logo.jpg" width="100px" height="80px" class="logo"></td>
 				<td><%=addFlight.getFlightNumber()%></td>
 				<td><%=addFlight.getFlightName()%></td>
 				<td><%=addFlight.getFlightSource()%></td>
@@ -152,7 +152,7 @@ tr:nth-child(odd) {
 			
 				<%if(addFlight.getFlightName().equalsIgnoreCase("goAir")){ %>
 			<tr>
-				<td><img alt ="goAir" src="image/wp9133939.jpg" width="100px" height="80px" class="logo"></td>
+				<td><img alt ="goAir" src="image/goAir logo.png" width="100px" height="80px" class="logo"></td>
 				<td><%=addFlight.getFlightNumber()%></td>
 				<td><%=addFlight.getFlightName()%></td>
 				<td><%=addFlight.getFlightSource()%></td>
@@ -168,7 +168,7 @@ tr:nth-child(odd) {
 			
 				<%if(addFlight.getFlightName().equalsIgnoreCase("Akasha-Air")){ %>
 			<tr>
-				<td><img alt ="Akasha-Air" src="image/wp9133939.jpg" width="100px" height="80px" class="logo"></td>
+				<td><img alt ="Akasha-Air" src="image/AkasaAir-logo.jpg" width="100px" height="80px" class="logo"></td>
 				<td><%=addFlight.getFlightNumber()%></td>
 				<td><%=addFlight.getFlightName()%></td>
 				<td><%=addFlight.getFlightSource()%></td>
@@ -184,7 +184,7 @@ tr:nth-child(odd) {
 			
 				<%if(addFlight.getFlightName().equalsIgnoreCase("AirGo")){ %>
 			<tr>
-				<td><img alt ="AirGo" src="image/wp9133939.jpg" width="100px" height="80px" class="logo"></td>
+				<td><img alt ="AirGo" src="image/AirGo-logo.jpg" width="100px" height="80px" class="logo"></td>
 				<td><%=addFlight.getFlightNumber()%></td>
 				<td><%=addFlight.getFlightName()%></td>
 				<td><%=addFlight.getFlightSource()%></td>
@@ -200,7 +200,7 @@ tr:nth-child(odd) {
 			
 				<%if(addFlight.getFlightName().equalsIgnoreCase("AirIndia")){ %>
 			<tr>
-				<td><img alt ="AirIndia" src="image/wp9133939.jpg" width="100px" height="80px" class="logo"></td>
+				<td><img alt ="AirIndia" src="image/AIndia-logo.jpg" width="100px" height="80px" class="logo"></td>
 				<td><%=addFlight.getFlightNumber()%></td>
 				<td><%=addFlight.getFlightName()%></td>
 				<td><%=addFlight.getFlightSource()%></td>

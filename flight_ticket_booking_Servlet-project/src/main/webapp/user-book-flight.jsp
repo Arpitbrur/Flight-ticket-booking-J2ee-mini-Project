@@ -14,8 +14,12 @@
             padding: 0px;
             /* border: 2px solid blue; */
         }
-
- .main-page{
+		.detail{
+			font-size: 30px;
+			font-family: cursive;
+			margin-left: 125px;
+		}
+ 		.main-page{
             /* background-color: red; */
             height: 100vh;
             background-image:url("image/admin-add-flight.jpg");
@@ -33,9 +37,9 @@
             /* border: solid 2px red; */
         }
         form{
-            /* background-color: red; */
+            /* background-color:  whiteSmoke; */ 
             /* border: 2px solid red; */
-            margin: 6rem;
+            margin: 8rem;
             width: 120vh;
             
         }
@@ -64,6 +68,18 @@
         .gender{
         	margin-right: 35px;
         }
+        
+        .btn{
+        	margin-left: 155px;
+        	width: 180px;
+        	font-size: 23px;
+        	border-radius: 10px;
+        }
+        
+        .btn:hover{
+        	background-color: #f5f4f4cf;
+        	
+        }
 </style>
 </head>
 
@@ -80,8 +96,10 @@
 	
 	<section class="main-page">
 		<div class="flight">
+		
 		<form action="flightBooking" method="post">
-
+	
+			<h2 class="detail">Passenger Details</h2>
 			<input type="number" name="number" class="common" value="<%=addFlight.getFlightNumber()%>" hidden="true"><br>
 			
 			<input type="decimal" name="price" class="common" value="<%=addFlight.getFlightEconomyPrice()%>" hidden="true"><br>
@@ -112,7 +130,7 @@
 
 			<input type="submit" hidden="true" value="<%=addFlight.getFlightEconomyPrice()%>">
 			
-			<button type="submit">BookYourTicket</button>
+			<button type="submit" class="btn"> BookYourTicket</button>
 
 		</form>
 		</div>

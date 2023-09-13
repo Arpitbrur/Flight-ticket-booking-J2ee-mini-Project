@@ -114,7 +114,7 @@ button{
 	<%
 		HttpSession httpSession = request.getSession();
 		String password = (String)request.getAttribute("pass");
-		String email = (String)request.getAttribute("message");
+		String email = (String)request.getAttribute("email");
 	%>
 <body>
 	 <section>

@@ -41,7 +41,7 @@ public class AdminController extends HttpServlet{
 				dispatcher.forward(req, resp);
 			}
 		}else {
-			req.setAttribute("message", "invalid email");
+			req.setAttribute("email", "invalid email");
 			RequestDispatcher dispatcher = req.getRequestDispatcher("admin-login.jsp");
 			dispatcher.forward(req, resp);
 		}
