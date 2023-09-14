@@ -18,6 +18,8 @@
 }
 
 
+
+
 .logo {
 	border: 2px solid gray;
 	border-radius: 50%;
@@ -109,6 +111,17 @@ tr:nth-child(odd) {
 		AdminAddFlightDao addFlightDao = new AdminAddFlightDao();
 		List<AdminAddFlight> addFlights = addFlightDao.getAllFlight();
 	%>
+	
+	<!-- <header>
+        <nav class="navbar">
+            <ul>            
+                <li><a href="home.jsp">Home</a></li> 
+                <li><a href="user-registration.jsp">User Register</a></li>
+                <li><a href="admin-flight-detail.jsp">Flight Details</a></li>
+                <li><a href="adminLogout">admin-Logout</a></li>              
+            </ul>
+        </nav>       
+    </header> -->
 	
 	<div class="filter"></div>
 	<div class="table-box">

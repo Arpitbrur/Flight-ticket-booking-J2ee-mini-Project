@@ -87,7 +87,8 @@
             display: flex;
             flex-direction: column;
         }
-        .main-page button{
+        
+        /* .main-page button{
             background-color: #001b94;
             color:  aliceblue;
             font-size: 1.5rem;
@@ -108,15 +109,29 @@
             transition-duration: 1s;
             font-size: 1.5rem;
             width: 25vh;
-        }
+        } */
 </style>
 </head>
 <body>	
+		<%HttpSession httpSession = request.getSession(); 
+		  String email = (String)httpSession.getAttribute("email");
+		  String adminEmail = (String)httpSession.getAttribute("adminEmail");
+		
+		%>
+		
 	<header>
         <nav class="navbar">
-            <ul>            
-                <li><a href="admin-login.jsp">Admin Login</a></li>
-                <li><a href="user-login.jsp">User Login</a></li>
+            <ul>   
+            	<%if(adminEmail==null){ %>         
+                <li><a href="admin-login.jsp">Admin-Login</a></li>
+                <%}else{ %>
+                <li><a href="adminLogout">Admin-LogOut</a></li>
+                <%} %>
+                <%if(email==null){ %>
+                <li><a href="user-login.jsp">User-Login</a></li>
+                <%}else{ %>
+                <li><a href="userLogout">User-LogOut</a></li>
+                <%} %>
                 <li><a href="pnrClass">PNR</a></li>               
             </ul>
         </nav>       
@@ -126,7 +141,7 @@
                 <h1>Start your journey with us.</h1>                
                 <span>Book your ticket for flight, <br> Let's travel together </span>
              
-                <button>Start Journey</button>                 
+                <!-- <button>Start Journey</button> -->                 
         </div>     
     </section>
 </body>

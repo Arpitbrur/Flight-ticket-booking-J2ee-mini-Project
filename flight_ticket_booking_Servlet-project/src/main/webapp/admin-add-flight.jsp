@@ -126,7 +126,7 @@
 <header>
         <nav class="navbar">
             <ul>
-                <li><a href="home.jsp">Home-Page</a></li>
+                <li><a href="home.jsp">Home</a></li>
                 <li><a href="admin-flight-detail.jsp">Flight-Detail</a></li>
                 <li><a href="adminLogout">Logout</a></li>
                 <li><a href="">Contact with us</a></li>

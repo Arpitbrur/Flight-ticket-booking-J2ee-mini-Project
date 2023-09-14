@@ -166,12 +166,14 @@ input{
  	<header>
         <nav class="navbar">
             <ul>            
-                
-                <li><a href="user-registration.jsp">User Register</a></li>
-                <li><a href="admin-flight-detail.jsp">Flight Details</a></li>               
+                <li><a href="home.jsp">Home</a></li> 
+                <!-- <li><a href="user-registration.jsp">User Register</a></li> -->
+                <!-- <li><a href="admin-flight-detail.jsp">Flight Details</a></li>  -->
+                <li><a href="userLogout">User-Logout</a></li>              
             </ul>
         </nav>       
     </header>
+    
      <section>
         <div class="form-box">
             <div class="form-value">
